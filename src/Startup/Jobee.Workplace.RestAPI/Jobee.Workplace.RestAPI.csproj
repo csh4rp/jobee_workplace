@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Shared\Jobee.Workplace.Shared.Infrastructure\Jobee.Workplace.Shared.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\Shared\Jobee.Workplace.Shared.RestAPI\Jobee.Workplace.Shared.RestAPI.csproj" />
+    </ItemGroup>
+
+</Project>

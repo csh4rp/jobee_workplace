@@ -1,0 +1,13 @@
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/bin/Debug/net10.0/Jobee.Workplace.Billing.Domain.deps.json
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/bin/Debug/net10.0/Jobee.Workplace.Billing.Domain.dll
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/bin/Debug/net10.0/Jobee.Workplace.Billing.Domain.pdb
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/bin/Debug/net10.0/Jobee.Workplace.Billing.Domain.xml
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/obj/Debug/net10.0/Jobee.Workplace.Billing.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/obj/Debug/net10.0/Jobee.Workplace.Billing.Domain.AssemblyInfoInputs.cache
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/obj/Debug/net10.0/Jobee.Workplace.Billing.Domain.AssemblyInfo.cs
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/obj/Debug/net10.0/Jobee.Workplace.Billing.Domain.csproj.CoreCompileInputs.cache
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/obj/Debug/net10.0/Jobee.Workplace.Billing.Domain.dll
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/obj/Debug/net10.0/refint/Jobee.Workplace.Billing.Domain.dll
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/obj/Debug/net10.0/Jobee.Workplace.Billing.Domain.xml
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/obj/Debug/net10.0/Jobee.Workplace.Billing.Domain.pdb
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Domain/obj/Debug/net10.0/ref/Jobee.Workplace.Billing.Domain.dll

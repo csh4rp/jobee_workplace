@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" />
+        <PackageReference Include="MediatR" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Jobee.Workplace.Jobs.Contracts\Jobee.Workplace.Jobs.Contracts.csproj" />
+      <ProjectReference Include="..\Jobee.Workplace.Jobs.Domain\Jobee.Workplace.Jobs.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/bin/Release/net10.0/Jobee.Workplace.Billing.Infrastructure.deps.json
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/bin/Release/net10.0/Jobee.Workplace.Billing.Infrastructure.dll
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/bin/Release/net10.0/Jobee.Workplace.Billing.Infrastructure.pdb
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/bin/Release/net10.0/Jobee.Workplace.Billing.Infrastructure.xml
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/obj/Release/net10.0/Jobee.Workplace.Billing.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/obj/Release/net10.0/Jobee.Workplace.Billing.Infrastructure.AssemblyInfoInputs.cache
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/obj/Release/net10.0/Jobee.Workplace.Billing.Infrastructure.AssemblyInfo.cs
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/obj/Release/net10.0/Jobee.Workplace.Billing.Infrastructure.csproj.CoreCompileInputs.cache
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/obj/Release/net10.0/Jobee.Workplace.Billing.Infrastructure.dll
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/obj/Release/net10.0/refint/Jobee.Workplace.Billing.Infrastructure.dll
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/obj/Release/net10.0/Jobee.Workplace.Billing.Infrastructure.xml
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/obj/Release/net10.0/Jobee.Workplace.Billing.Infrastructure.pdb
+/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.Infrastructure/obj/Release/net10.0/ref/Jobee.Workplace.Billing.Infrastructure.dll

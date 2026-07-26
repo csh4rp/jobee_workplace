@@ -1,0 +1,6 @@
+@Jobee.Workplace.Billing.RestApi_HostAddress = http://localhost:5066
+
+GET {{Jobee.Workplace.Billing.RestApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

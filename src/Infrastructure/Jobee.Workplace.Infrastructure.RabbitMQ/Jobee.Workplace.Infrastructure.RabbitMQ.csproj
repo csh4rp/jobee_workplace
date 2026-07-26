@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+      <PackageReference Include="MassTransit.EntityFrameworkCore" />
+      <PackageReference Include="MassTransit.Quartz" />
+      <PackageReference Include="MassTransit.RabbitMQ" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Shared\Jobee.Workplace.Shared.Application\Jobee.Workplace.Shared.Application.csproj" />
+      <ProjectReference Include="..\..\Shared\Jobee.Workplace.Shared.Infrastructure\Jobee.Workplace.Shared.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/bin/Release/net10.0/Jobee.Workplace.Shared.Contracts.deps.json
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/bin/Release/net10.0/Jobee.Workplace.Shared.Contracts.dll
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/bin/Release/net10.0/Jobee.Workplace.Shared.Contracts.pdb
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/bin/Release/net10.0/Jobee.Workplace.Shared.Contracts.xml
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/obj/Release/net10.0/Jobee.Workplace.Shared.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/obj/Release/net10.0/Jobee.Workplace.Shared.Contracts.AssemblyInfoInputs.cache
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/obj/Release/net10.0/Jobee.Workplace.Shared.Contracts.AssemblyInfo.cs
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/obj/Release/net10.0/Jobee.Workplace.Shared.Contracts.csproj.CoreCompileInputs.cache
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/obj/Release/net10.0/Jobee.Workplace.Shared.Contracts.dll
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/obj/Release/net10.0/refint/Jobee.Workplace.Shared.Contracts.dll
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/obj/Release/net10.0/Jobee.Workplace.Shared.Contracts.xml
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/obj/Release/net10.0/Jobee.Workplace.Shared.Contracts.pdb
+/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/obj/Release/net10.0/ref/Jobee.Workplace.Shared.Contracts.dll
