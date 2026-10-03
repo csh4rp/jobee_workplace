@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Jobee.Workplace.Jobs.Application.Categories.Creation;
 
-public class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, Guid>
+internal sealed class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, Guid>
 {
     private readonly ICategoryRepository _categoryRepository;
     private readonly ILogger<CreateCategoryCommandHandler> _logger;

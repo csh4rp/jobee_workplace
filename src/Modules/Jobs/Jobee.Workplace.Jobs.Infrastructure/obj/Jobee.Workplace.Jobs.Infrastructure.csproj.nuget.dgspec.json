@@ -27,6 +27,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
               "/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Contracts/Jobee.Workplace.Shared.Contracts.csproj": {
@@ -50,6 +51,7 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "MediatR.Contracts": {
@@ -59,39 +61,38 @@
             }
           },
           "centralPackageVersions": {
-            "Asp.Versioning.Http": "8.1.0",
+            "Asp.Versioning.Http": "10.2.3",
             "FluentValidation": "12.1.1",
             "FluentValidation.DependencyInjectionExtensions": "12.1.1",
-            "MassTransit.Abstractions": "9.0.1",
-            "MassTransit.EntityFrameworkCore": "9.0.1",
-            "MassTransit.Quartz": "9.0.1",
-            "MassTransit.RabbitMQ": "9.0.1",
-            "MediatR": "14.1.0",
+            "MassTransit.Abstractions": "9.2.2",
+            "MassTransit.EntityFrameworkCore": "9.2.2",
+            "MassTransit.Quartz": "9.2.2",
+            "MassTransit.RabbitMQ": "9.2.2",
+            "Mediator.Abstractions": "3.0.2",
+            "MediatR": "14.2.0",
             "MediatR.Contracts": "2.0.1",
-            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.7",
-            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.7",
-            "Microsoft.AspNetCore.OpenApi": "10.0.7",
-            "Microsoft.EntityFrameworkCore": "10.0.7",
-            "Microsoft.EntityFrameworkCore.Relational": "10.0.7",
-            "Microsoft.Extensions.Caching.Hybrid": "10.4.0",
-            "Microsoft.Extensions.Configuration.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Configuration.Binder": "10.0.7",
-            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.7",
-            "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
-            "Microsoft.OpenApi": "2.7.5",
-            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1",
-            "OpenTelemetry": "1.15.3",
-            "OpenTelemetry.Exporter.Console": "1.15.3",
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
-            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.15.3-beta.1",
-            "OpenTelemetry.Extensions.Hosting": "1.15.3",
-            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.1",
-            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.15.0-beta.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.12",
+            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.12",
+            "Microsoft.AspNetCore.OpenApi": "10.0.12",
+            "Microsoft.EntityFrameworkCore": "10.0.12",
+            "Microsoft.EntityFrameworkCore.Relational": "10.0.12",
+            "Microsoft.Extensions.Caching.Hybrid": "10.10.0",
+            "Microsoft.Extensions.Configuration.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Configuration.Binder": "10.0.12",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.12",
+            "Microsoft.Extensions.Logging.Abstractions": "10.0.12",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3",
+            "OpenTelemetry": "1.19.1",
+            "OpenTelemetry.Exporter.Console": "1.19.1",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.19.1",
+            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.19.1-beta.1",
+            "OpenTelemetry.Extensions.Hosting": "1.19.1",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.19.0",
+            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.19.1-beta.1",
             "Scrutor": "7.0.0",
-            "Serilog": "4.3.1",
-            "Swashbuckle.AspNetCore": "10.1.7",
-            "System.Security.Cryptography.Xml": "10.0.10"
+            "Serilog": "4.4.0",
+            "Swashbuckle.AspNetCore": "10.2.3"
           },
           "imports": [
             "net461",
@@ -109,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.110/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.112/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -410,6 +411,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
               "/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Domain/Jobee.Workplace.Shared.Domain.csproj": {
@@ -433,41 +435,41 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "centralPackageVersions": {
-            "Asp.Versioning.Http": "8.1.0",
+            "Asp.Versioning.Http": "10.2.3",
             "FluentValidation": "12.1.1",
             "FluentValidation.DependencyInjectionExtensions": "12.1.1",
-            "MassTransit.Abstractions": "9.0.1",
-            "MassTransit.EntityFrameworkCore": "9.0.1",
-            "MassTransit.Quartz": "9.0.1",
-            "MassTransit.RabbitMQ": "9.0.1",
-            "MediatR": "14.1.0",
+            "MassTransit.Abstractions": "9.2.2",
+            "MassTransit.EntityFrameworkCore": "9.2.2",
+            "MassTransit.Quartz": "9.2.2",
+            "MassTransit.RabbitMQ": "9.2.2",
+            "Mediator.Abstractions": "3.0.2",
+            "MediatR": "14.2.0",
             "MediatR.Contracts": "2.0.1",
-            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.7",
-            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.7",
-            "Microsoft.AspNetCore.OpenApi": "10.0.7",
-            "Microsoft.EntityFrameworkCore": "10.0.7",
-            "Microsoft.EntityFrameworkCore.Relational": "10.0.7",
-            "Microsoft.Extensions.Caching.Hybrid": "10.4.0",
-            "Microsoft.Extensions.Configuration.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Configuration.Binder": "10.0.7",
-            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.7",
-            "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
-            "Microsoft.OpenApi": "2.7.5",
-            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1",
-            "OpenTelemetry": "1.15.3",
-            "OpenTelemetry.Exporter.Console": "1.15.3",
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
-            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.15.3-beta.1",
-            "OpenTelemetry.Extensions.Hosting": "1.15.3",
-            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.1",
-            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.15.0-beta.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.12",
+            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.12",
+            "Microsoft.AspNetCore.OpenApi": "10.0.12",
+            "Microsoft.EntityFrameworkCore": "10.0.12",
+            "Microsoft.EntityFrameworkCore.Relational": "10.0.12",
+            "Microsoft.Extensions.Caching.Hybrid": "10.10.0",
+            "Microsoft.Extensions.Configuration.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Configuration.Binder": "10.0.12",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.12",
+            "Microsoft.Extensions.Logging.Abstractions": "10.0.12",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3",
+            "OpenTelemetry": "1.19.1",
+            "OpenTelemetry.Exporter.Console": "1.19.1",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.19.1",
+            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.19.1-beta.1",
+            "OpenTelemetry.Extensions.Hosting": "1.19.1",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.19.0",
+            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.19.1-beta.1",
             "Scrutor": "7.0.0",
-            "Serilog": "4.3.1",
-            "Swashbuckle.AspNetCore": "10.1.7",
-            "System.Security.Cryptography.Xml": "10.0.10"
+            "Serilog": "4.4.0",
+            "Swashbuckle.AspNetCore": "10.2.3"
           },
           "imports": [
             "net461",
@@ -485,7 +487,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.110/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.112/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -786,6 +788,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
               "/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Jobs/Jobee.Workplace.Jobs.Contracts/Jobee.Workplace.Jobs.Contracts.csproj": {
@@ -815,53 +818,53 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[14.1.0, )",
+              "version": "[14.2.0, )",
               "versionCentrallyManaged": true
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[10.0.7, )",
+              "version": "[10.0.12, )",
               "versionCentrallyManaged": true
             }
           },
           "centralPackageVersions": {
-            "Asp.Versioning.Http": "8.1.0",
+            "Asp.Versioning.Http": "10.2.3",
             "FluentValidation": "12.1.1",
             "FluentValidation.DependencyInjectionExtensions": "12.1.1",
-            "MassTransit.Abstractions": "9.0.1",
-            "MassTransit.EntityFrameworkCore": "9.0.1",
-            "MassTransit.Quartz": "9.0.1",
-            "MassTransit.RabbitMQ": "9.0.1",
-            "MediatR": "14.1.0",
+            "MassTransit.Abstractions": "9.2.2",
+            "MassTransit.EntityFrameworkCore": "9.2.2",
+            "MassTransit.Quartz": "9.2.2",
+            "MassTransit.RabbitMQ": "9.2.2",
+            "Mediator.Abstractions": "3.0.2",
+            "MediatR": "14.2.0",
             "MediatR.Contracts": "2.0.1",
-            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.7",
-            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.7",
-            "Microsoft.AspNetCore.OpenApi": "10.0.7",
-            "Microsoft.EntityFrameworkCore": "10.0.7",
-            "Microsoft.EntityFrameworkCore.Relational": "10.0.7",
-            "Microsoft.Extensions.Caching.Hybrid": "10.4.0",
-            "Microsoft.Extensions.Configuration.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Configuration.Binder": "10.0.7",
-            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.7",
-            "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
-            "Microsoft.OpenApi": "2.7.5",
-            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1",
-            "OpenTelemetry": "1.15.3",
-            "OpenTelemetry.Exporter.Console": "1.15.3",
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
-            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.15.3-beta.1",
-            "OpenTelemetry.Extensions.Hosting": "1.15.3",
-            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.1",
-            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.15.0-beta.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.12",
+            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.12",
+            "Microsoft.AspNetCore.OpenApi": "10.0.12",
+            "Microsoft.EntityFrameworkCore": "10.0.12",
+            "Microsoft.EntityFrameworkCore.Relational": "10.0.12",
+            "Microsoft.Extensions.Caching.Hybrid": "10.10.0",
+            "Microsoft.Extensions.Configuration.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Configuration.Binder": "10.0.12",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.12",
+            "Microsoft.Extensions.Logging.Abstractions": "10.0.12",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3",
+            "OpenTelemetry": "1.19.1",
+            "OpenTelemetry.Exporter.Console": "1.19.1",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.19.1",
+            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.19.1-beta.1",
+            "OpenTelemetry.Extensions.Hosting": "1.19.1",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.19.0",
+            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.19.1-beta.1",
             "Scrutor": "7.0.0",
-            "Serilog": "4.3.1",
-            "Swashbuckle.AspNetCore": "10.1.7",
-            "System.Security.Cryptography.Xml": "10.0.10"
+            "Serilog": "4.4.0",
+            "Swashbuckle.AspNetCore": "10.2.3"
           },
           "imports": [
             "net461",
@@ -879,7 +882,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.110/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.112/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1180,6 +1183,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
               "/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Common/Jobee.Workplace.Shared.Common.csproj": {
@@ -1206,11 +1210,12 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[14.1.0, )",
+              "version": "[14.2.0, )",
               "versionCentrallyManaged": true
             },
             "MediatR.Contracts": {
@@ -1220,22 +1225,22 @@
             },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
-              "version": "[10.0.7, )",
+              "version": "[10.0.12, )",
               "versionCentrallyManaged": true
             },
             "Microsoft.Extensions.Configuration.Binder": {
               "target": "Package",
-              "version": "[10.0.7, )",
+              "version": "[10.0.12, )",
               "versionCentrallyManaged": true
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
-              "version": "[10.0.7, )",
+              "version": "[10.0.12, )",
               "versionCentrallyManaged": true
             },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
-              "version": "[10.0.7, )",
+              "version": "[10.0.12, )",
               "versionCentrallyManaged": true
             },
             "Scrutor": {
@@ -1245,39 +1250,38 @@
             }
           },
           "centralPackageVersions": {
-            "Asp.Versioning.Http": "8.1.0",
+            "Asp.Versioning.Http": "10.2.3",
             "FluentValidation": "12.1.1",
             "FluentValidation.DependencyInjectionExtensions": "12.1.1",
-            "MassTransit.Abstractions": "9.0.1",
-            "MassTransit.EntityFrameworkCore": "9.0.1",
-            "MassTransit.Quartz": "9.0.1",
-            "MassTransit.RabbitMQ": "9.0.1",
-            "MediatR": "14.1.0",
+            "MassTransit.Abstractions": "9.2.2",
+            "MassTransit.EntityFrameworkCore": "9.2.2",
+            "MassTransit.Quartz": "9.2.2",
+            "MassTransit.RabbitMQ": "9.2.2",
+            "Mediator.Abstractions": "3.0.2",
+            "MediatR": "14.2.0",
             "MediatR.Contracts": "2.0.1",
-            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.7",
-            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.7",
-            "Microsoft.AspNetCore.OpenApi": "10.0.7",
-            "Microsoft.EntityFrameworkCore": "10.0.7",
-            "Microsoft.EntityFrameworkCore.Relational": "10.0.7",
-            "Microsoft.Extensions.Caching.Hybrid": "10.4.0",
-            "Microsoft.Extensions.Configuration.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Configuration.Binder": "10.0.7",
-            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.7",
-            "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
-            "Microsoft.OpenApi": "2.7.5",
-            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1",
-            "OpenTelemetry": "1.15.3",
-            "OpenTelemetry.Exporter.Console": "1.15.3",
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
-            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.15.3-beta.1",
-            "OpenTelemetry.Extensions.Hosting": "1.15.3",
-            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.1",
-            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.15.0-beta.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.12",
+            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.12",
+            "Microsoft.AspNetCore.OpenApi": "10.0.12",
+            "Microsoft.EntityFrameworkCore": "10.0.12",
+            "Microsoft.EntityFrameworkCore.Relational": "10.0.12",
+            "Microsoft.Extensions.Caching.Hybrid": "10.10.0",
+            "Microsoft.Extensions.Configuration.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Configuration.Binder": "10.0.12",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.12",
+            "Microsoft.Extensions.Logging.Abstractions": "10.0.12",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3",
+            "OpenTelemetry": "1.19.1",
+            "OpenTelemetry.Exporter.Console": "1.19.1",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.19.1",
+            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.19.1-beta.1",
+            "OpenTelemetry.Extensions.Hosting": "1.19.1",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.19.0",
+            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.19.1-beta.1",
             "Scrutor": "7.0.0",
-            "Serilog": "4.3.1",
-            "Swashbuckle.AspNetCore": "10.1.7",
-            "System.Security.Cryptography.Xml": "10.0.10"
+            "Serilog": "4.4.0",
+            "Swashbuckle.AspNetCore": "10.2.3"
           },
           "imports": [
             "net461",
@@ -1295,7 +1299,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.110/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.112/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1596,6 +1600,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -1615,41 +1620,41 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "centralPackageVersions": {
-            "Asp.Versioning.Http": "8.1.0",
+            "Asp.Versioning.Http": "10.2.3",
             "FluentValidation": "12.1.1",
             "FluentValidation.DependencyInjectionExtensions": "12.1.1",
-            "MassTransit.Abstractions": "9.0.1",
-            "MassTransit.EntityFrameworkCore": "9.0.1",
-            "MassTransit.Quartz": "9.0.1",
-            "MassTransit.RabbitMQ": "9.0.1",
-            "MediatR": "14.1.0",
+            "MassTransit.Abstractions": "9.2.2",
+            "MassTransit.EntityFrameworkCore": "9.2.2",
+            "MassTransit.Quartz": "9.2.2",
+            "MassTransit.RabbitMQ": "9.2.2",
+            "Mediator.Abstractions": "3.0.2",
+            "MediatR": "14.2.0",
             "MediatR.Contracts": "2.0.1",
-            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.7",
-            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.7",
-            "Microsoft.AspNetCore.OpenApi": "10.0.7",
-            "Microsoft.EntityFrameworkCore": "10.0.7",
-            "Microsoft.EntityFrameworkCore.Relational": "10.0.7",
-            "Microsoft.Extensions.Caching.Hybrid": "10.4.0",
-            "Microsoft.Extensions.Configuration.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Configuration.Binder": "10.0.7",
-            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.7",
-            "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
-            "Microsoft.OpenApi": "2.7.5",
-            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1",
-            "OpenTelemetry": "1.15.3",
-            "OpenTelemetry.Exporter.Console": "1.15.3",
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
-            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.15.3-beta.1",
-            "OpenTelemetry.Extensions.Hosting": "1.15.3",
-            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.1",
-            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.15.0-beta.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.12",
+            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.12",
+            "Microsoft.AspNetCore.OpenApi": "10.0.12",
+            "Microsoft.EntityFrameworkCore": "10.0.12",
+            "Microsoft.EntityFrameworkCore.Relational": "10.0.12",
+            "Microsoft.Extensions.Caching.Hybrid": "10.10.0",
+            "Microsoft.Extensions.Configuration.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Configuration.Binder": "10.0.12",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.12",
+            "Microsoft.Extensions.Logging.Abstractions": "10.0.12",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3",
+            "OpenTelemetry": "1.19.1",
+            "OpenTelemetry.Exporter.Console": "1.19.1",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.19.1",
+            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.19.1-beta.1",
+            "OpenTelemetry.Extensions.Hosting": "1.19.1",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.19.0",
+            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.19.1-beta.1",
             "Scrutor": "7.0.0",
-            "Serilog": "4.3.1",
-            "Swashbuckle.AspNetCore": "10.1.7",
-            "System.Security.Cryptography.Xml": "10.0.10"
+            "Serilog": "4.4.0",
+            "Swashbuckle.AspNetCore": "10.2.3"
           },
           "imports": [
             "net461",
@@ -1667,7 +1672,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.110/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.112/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1968,6 +1973,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -1987,41 +1993,41 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "centralPackageVersions": {
-            "Asp.Versioning.Http": "8.1.0",
+            "Asp.Versioning.Http": "10.2.3",
             "FluentValidation": "12.1.1",
             "FluentValidation.DependencyInjectionExtensions": "12.1.1",
-            "MassTransit.Abstractions": "9.0.1",
-            "MassTransit.EntityFrameworkCore": "9.0.1",
-            "MassTransit.Quartz": "9.0.1",
-            "MassTransit.RabbitMQ": "9.0.1",
-            "MediatR": "14.1.0",
+            "MassTransit.Abstractions": "9.2.2",
+            "MassTransit.EntityFrameworkCore": "9.2.2",
+            "MassTransit.Quartz": "9.2.2",
+            "MassTransit.RabbitMQ": "9.2.2",
+            "Mediator.Abstractions": "3.0.2",
+            "MediatR": "14.2.0",
             "MediatR.Contracts": "2.0.1",
-            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.7",
-            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.7",
-            "Microsoft.AspNetCore.OpenApi": "10.0.7",
-            "Microsoft.EntityFrameworkCore": "10.0.7",
-            "Microsoft.EntityFrameworkCore.Relational": "10.0.7",
-            "Microsoft.Extensions.Caching.Hybrid": "10.4.0",
-            "Microsoft.Extensions.Configuration.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Configuration.Binder": "10.0.7",
-            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.7",
-            "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
-            "Microsoft.OpenApi": "2.7.5",
-            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1",
-            "OpenTelemetry": "1.15.3",
-            "OpenTelemetry.Exporter.Console": "1.15.3",
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
-            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.15.3-beta.1",
-            "OpenTelemetry.Extensions.Hosting": "1.15.3",
-            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.1",
-            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.15.0-beta.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.12",
+            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.12",
+            "Microsoft.AspNetCore.OpenApi": "10.0.12",
+            "Microsoft.EntityFrameworkCore": "10.0.12",
+            "Microsoft.EntityFrameworkCore.Relational": "10.0.12",
+            "Microsoft.Extensions.Caching.Hybrid": "10.10.0",
+            "Microsoft.Extensions.Configuration.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Configuration.Binder": "10.0.12",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.12",
+            "Microsoft.Extensions.Logging.Abstractions": "10.0.12",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3",
+            "OpenTelemetry": "1.19.1",
+            "OpenTelemetry.Exporter.Console": "1.19.1",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.19.1",
+            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.19.1-beta.1",
+            "OpenTelemetry.Extensions.Hosting": "1.19.1",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.19.0",
+            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.19.1-beta.1",
             "Scrutor": "7.0.0",
-            "Serilog": "4.3.1",
-            "Swashbuckle.AspNetCore": "10.1.7",
-            "System.Security.Cryptography.Xml": "10.0.10"
+            "Serilog": "4.4.0",
+            "Swashbuckle.AspNetCore": "10.2.3"
           },
           "imports": [
             "net461",
@@ -2039,7 +2045,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.110/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.112/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -2340,6 +2346,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
               "/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Common/Jobee.Workplace.Shared.Common.csproj": {
@@ -2363,41 +2370,41 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "centralPackageVersions": {
-            "Asp.Versioning.Http": "8.1.0",
+            "Asp.Versioning.Http": "10.2.3",
             "FluentValidation": "12.1.1",
             "FluentValidation.DependencyInjectionExtensions": "12.1.1",
-            "MassTransit.Abstractions": "9.0.1",
-            "MassTransit.EntityFrameworkCore": "9.0.1",
-            "MassTransit.Quartz": "9.0.1",
-            "MassTransit.RabbitMQ": "9.0.1",
-            "MediatR": "14.1.0",
+            "MassTransit.Abstractions": "9.2.2",
+            "MassTransit.EntityFrameworkCore": "9.2.2",
+            "MassTransit.Quartz": "9.2.2",
+            "MassTransit.RabbitMQ": "9.2.2",
+            "Mediator.Abstractions": "3.0.2",
+            "MediatR": "14.2.0",
             "MediatR.Contracts": "2.0.1",
-            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.7",
-            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.7",
-            "Microsoft.AspNetCore.OpenApi": "10.0.7",
-            "Microsoft.EntityFrameworkCore": "10.0.7",
-            "Microsoft.EntityFrameworkCore.Relational": "10.0.7",
-            "Microsoft.Extensions.Caching.Hybrid": "10.4.0",
-            "Microsoft.Extensions.Configuration.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Configuration.Binder": "10.0.7",
-            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.7",
-            "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
-            "Microsoft.OpenApi": "2.7.5",
-            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1",
-            "OpenTelemetry": "1.15.3",
-            "OpenTelemetry.Exporter.Console": "1.15.3",
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
-            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.15.3-beta.1",
-            "OpenTelemetry.Extensions.Hosting": "1.15.3",
-            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.1",
-            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.15.0-beta.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.12",
+            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.12",
+            "Microsoft.AspNetCore.OpenApi": "10.0.12",
+            "Microsoft.EntityFrameworkCore": "10.0.12",
+            "Microsoft.EntityFrameworkCore.Relational": "10.0.12",
+            "Microsoft.Extensions.Caching.Hybrid": "10.10.0",
+            "Microsoft.Extensions.Configuration.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Configuration.Binder": "10.0.12",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.12",
+            "Microsoft.Extensions.Logging.Abstractions": "10.0.12",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3",
+            "OpenTelemetry": "1.19.1",
+            "OpenTelemetry.Exporter.Console": "1.19.1",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.19.1",
+            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.19.1-beta.1",
+            "OpenTelemetry.Extensions.Hosting": "1.19.1",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.19.0",
+            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.19.1-beta.1",
             "Scrutor": "7.0.0",
-            "Serilog": "4.3.1",
-            "Swashbuckle.AspNetCore": "10.1.7",
-            "System.Security.Cryptography.Xml": "10.0.10"
+            "Serilog": "4.4.0",
+            "Swashbuckle.AspNetCore": "10.2.3"
           },
           "imports": [
             "net461",
@@ -2415,7 +2422,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.110/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.112/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -2716,6 +2723,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
               "/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Application/Jobee.Workplace.Shared.Application.csproj": {
@@ -2742,58 +2750,58 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "MassTransit.Abstractions": {
               "target": "Package",
-              "version": "[9.0.1, )",
+              "version": "[9.2.2, )",
               "versionCentrallyManaged": true
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[10.0.7, )",
+              "version": "[10.0.12, )",
               "versionCentrallyManaged": true
             },
             "Serilog": {
               "target": "Package",
-              "version": "[4.3.1, )",
+              "version": "[4.4.0, )",
               "versionCentrallyManaged": true
             }
           },
           "centralPackageVersions": {
-            "Asp.Versioning.Http": "8.1.0",
+            "Asp.Versioning.Http": "10.2.3",
             "FluentValidation": "12.1.1",
             "FluentValidation.DependencyInjectionExtensions": "12.1.1",
-            "MassTransit.Abstractions": "9.0.1",
-            "MassTransit.EntityFrameworkCore": "9.0.1",
-            "MassTransit.Quartz": "9.0.1",
-            "MassTransit.RabbitMQ": "9.0.1",
-            "MediatR": "14.1.0",
+            "MassTransit.Abstractions": "9.2.2",
+            "MassTransit.EntityFrameworkCore": "9.2.2",
+            "MassTransit.Quartz": "9.2.2",
+            "MassTransit.RabbitMQ": "9.2.2",
+            "Mediator.Abstractions": "3.0.2",
+            "MediatR": "14.2.0",
             "MediatR.Contracts": "2.0.1",
-            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.7",
-            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.7",
-            "Microsoft.AspNetCore.OpenApi": "10.0.7",
-            "Microsoft.EntityFrameworkCore": "10.0.7",
-            "Microsoft.EntityFrameworkCore.Relational": "10.0.7",
-            "Microsoft.Extensions.Caching.Hybrid": "10.4.0",
-            "Microsoft.Extensions.Configuration.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Configuration.Binder": "10.0.7",
-            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
-            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.7",
-            "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
-            "Microsoft.OpenApi": "2.7.5",
-            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1",
-            "OpenTelemetry": "1.15.3",
-            "OpenTelemetry.Exporter.Console": "1.15.3",
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
-            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.15.3-beta.1",
-            "OpenTelemetry.Extensions.Hosting": "1.15.3",
-            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.1",
-            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.15.0-beta.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.12",
+            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.12",
+            "Microsoft.AspNetCore.OpenApi": "10.0.12",
+            "Microsoft.EntityFrameworkCore": "10.0.12",
+            "Microsoft.EntityFrameworkCore.Relational": "10.0.12",
+            "Microsoft.Extensions.Caching.Hybrid": "10.10.0",
+            "Microsoft.Extensions.Configuration.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Configuration.Binder": "10.0.12",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
+            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.12",
+            "Microsoft.Extensions.Logging.Abstractions": "10.0.12",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3",
+            "OpenTelemetry": "1.19.1",
+            "OpenTelemetry.Exporter.Console": "1.19.1",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.19.1",
+            "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.19.1-beta.1",
+            "OpenTelemetry.Extensions.Hosting": "1.19.1",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.19.0",
+            "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.19.1-beta.1",
             "Scrutor": "7.0.0",
-            "Serilog": "4.3.1",
-            "Swashbuckle.AspNetCore": "10.1.7",
-            "System.Security.Cryptography.Xml": "10.0.10"
+            "Serilog": "4.4.0",
+            "Swashbuckle.AspNetCore": "10.2.3"
           },
           "imports": [
             "net461",
@@ -2811,7 +2819,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.110/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.112/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

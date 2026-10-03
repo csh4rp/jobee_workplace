@@ -10,13 +10,17 @@ public class Company : Entity<Guid>
     public string Description { get; private set; }
     
     public Address Address { get; private set; }
-    
-    public Company(string name, string description, Address address)
+
+    private Company(Guid id, string name, string description, Address address)
     {
-        Id = Guid.CreateVersion7();
+        Id = id;
         Name = name;
         Description = description;
         Address = address;
+    }
+
+    public Company(string name, string description, Address address) : this(Guid.CreateVersion7(), name, description, address)
+    {
         EnqueueEvent(new CompanyCreated(Id));
     }
 
@@ -32,4 +36,7 @@ public class Company : Entity<Guid>
         Address = address;
         EnqueueEvent(new CompanyUpdated(Id));
     }
+    
+    public static Company Create(Guid id, string name, string description, Address address) => 
+        new(id, name, description, address);
 }

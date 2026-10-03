@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MXrx6Dj1BOs=",
+  "dgSpecHash": "jhGVok9aB5Q=",
   "success": true,
   "projectFilePath": "/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.RestApi/Jobee.Workplace.Billing.RestApi.csproj",
   "expectedPackageFiles": [
-    "/home/kambie/.nuget/packages/microsoft.aspnetcore.openapi/10.0.7/microsoft.aspnetcore.openapi.10.0.7.nupkg.sha512",
-    "/home/kambie/.nuget/packages/microsoft.openapi/2.7.5/microsoft.openapi.2.7.5.nupkg.sha512"
+    "/home/kambie/.nuget/packages/microsoft.aspnetcore.openapi/10.0.12/microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
+    "/home/kambie/.nuget/packages/microsoft.openapi/2.12.0/microsoft.openapi.2.12.0.nupkg.sha512"
   ],
   "logs": []
 }

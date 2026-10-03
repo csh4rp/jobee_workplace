@@ -2,37 +2,43 @@
   "version": 3,
   "targets": {
     "net10.0": {
-      "Asp.Versioning.Abstractions/8.1.0": {
+      "Asp.Versioning.Abstractions/10.2.1": {
         "type": "package",
         "compile": {
-          "lib/net8.0/Asp.Versioning.Abstractions.dll": {
+          "lib/net10.0/Asp.Versioning.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Asp.Versioning.Abstractions.dll": {
+          "lib/net10.0/Asp.Versioning.Abstractions.dll": {
             "related": ".xml"
           }
+        },
+        "build": {
+          "buildTransitive/Asp.Versioning.Abstractions.targets": {}
         }
       },
-      "Asp.Versioning.Http/8.1.0": {
+      "Asp.Versioning.Http/10.2.3": {
         "type": "package",
         "dependencies": {
-          "Asp.Versioning.Abstractions": "8.1.0"
+          "Asp.Versioning.Abstractions": "10.2.1"
         },
         "compile": {
-          "lib/net8.0/Asp.Versioning.Http.dll": {
+          "lib/net10.0/Asp.Versioning.Http.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Asp.Versioning.Http.dll": {
+          "lib/net10.0/Asp.Versioning.Http.dll": {
             "related": ".xml"
           }
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
-        ]
+        ],
+        "build": {
+          "buildTransitive/Asp.Versioning.Http.targets": {}
+        }
       },
       "FluentValidation/12.1.1": {
         "type": "package",
@@ -63,7 +69,7 @@
           }
         }
       },
-      "MassTransit.Abstractions/9.0.1": {
+      "MassTransit.Abstractions/9.2.2": {
         "type": "package",
         "compile": {
           "lib/net10.0/MassTransit.Abstractions.dll": {
@@ -76,7 +82,7 @@
           }
         }
       },
-      "MediatR/14.1.0": {
+      "MediatR/14.2.0": {
         "type": "package",
         "dependencies": {
           "MediatR.Contracts": "[2.0.1, 3.0.0)",
@@ -106,10 +112,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.7": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.12": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.0.1"
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.19.2"
         },
         "compile": {
           "lib/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
@@ -125,10 +131,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.AspNetCore.OpenApi/10.0.7": {
+      "Microsoft.AspNetCore.OpenApi/10.0.12": {
         "type": "package",
         "dependencies": {
-          "Microsoft.OpenApi": "2.0.0"
+          "Microsoft.OpenApi": "[2.12.0, 3.0.0)"
         },
         "compile": {
           "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
@@ -147,11 +153,27 @@
           "build/Microsoft.AspNetCore.OpenApi.targets": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/10.0.7": {
+      "Microsoft.Bcl.Cryptography/10.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Microsoft.Bcl.Cryptography.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Bcl.Cryptography.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore/10.0.12": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "10.0.7",
-          "Microsoft.EntityFrameworkCore.Analyzers": "10.0.7"
+          "Microsoft.EntityFrameworkCore.Abstractions": "10.0.12",
+          "Microsoft.EntityFrameworkCore.Analyzers": "10.0.12"
         },
         "compile": {
           "lib/net10.0/Microsoft.EntityFrameworkCore.dll": {
@@ -167,7 +189,7 @@
           "buildTransitive/net10.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/10.0.7": {
+      "Microsoft.EntityFrameworkCore.Abstractions/10.0.12": {
         "type": "package",
         "compile": {
           "lib/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -180,7 +202,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/10.0.7": {
+      "Microsoft.EntityFrameworkCore.Analyzers/10.0.12": {
         "type": "package"
       },
       "Microsoft.Extensions.ApiDescription.Server/10.0.0": {
@@ -194,7 +216,7 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
-      "Microsoft.Extensions.Caching.Hybrid/10.4.0": {
+      "Microsoft.Extensions.Caching.Hybrid/10.10.0": {
         "type": "package",
         "compile": {
           "lib/net10.0/Microsoft.Extensions.Caching.Hybrid.dll": {
@@ -226,101 +248,102 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.IdentityModel.Abstractions/8.14.0": {
+      "Microsoft.IdentityModel.Abstractions/8.19.2": {
         "type": "package",
         "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Abstractions.dll": {
+          "lib/net10.0/Microsoft.IdentityModel.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Abstractions.dll": {
+          "lib/net10.0/Microsoft.IdentityModel.Abstractions.dll": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.IdentityModel.JsonWebTokens/8.14.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "8.14.0"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Logging/8.14.0": {
+      "Microsoft.IdentityModel.JsonWebTokens/8.19.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "8.14.0"
+          "Microsoft.IdentityModel.Tokens": "8.19.2"
         },
         "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Logging.dll": {
+          "lib/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Logging.dll": {
+          "lib/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.IdentityModel.Protocols/8.0.1": {
+      "Microsoft.IdentityModel.Logging/8.19.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "8.0.1"
+          "Microsoft.IdentityModel.Abstractions": "8.19.2"
         },
         "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Protocols.dll": {
+          "lib/net10.0/Microsoft.IdentityModel.Logging.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Protocols.dll": {
+          "lib/net10.0/Microsoft.IdentityModel.Logging.dll": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.0.1": {
+      "Microsoft.IdentityModel.Protocols/8.19.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Protocols": "8.0.1",
-          "System.IdentityModel.Tokens.Jwt": "8.0.1"
+          "Microsoft.IdentityModel.Tokens": "8.19.2"
         },
         "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+          "lib/net10.0/Microsoft.IdentityModel.Protocols.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
+          "lib/net10.0/Microsoft.IdentityModel.Protocols.dll": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.IdentityModel.Tokens/8.14.0": {
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.19.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Logging": "8.14.0"
+          "Microsoft.IdentityModel.Protocols": "8.19.2",
+          "System.IdentityModel.Tokens.Jwt": "8.19.2"
         },
         "compile": {
-          "lib/net9.0/Microsoft.IdentityModel.Tokens.dll": {
+          "lib/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/Microsoft.IdentityModel.Tokens.dll": {
+          "lib/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.OpenApi/2.7.5": {
+      "Microsoft.IdentityModel.Tokens/8.19.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Cryptography": "10.0.2",
+          "Microsoft.IdentityModel.Logging": "8.19.2"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.OpenApi/2.12.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.OpenApi.dll": {
@@ -333,10 +356,10 @@
           }
         }
       },
-      "OpenTelemetry/1.15.3": {
+      "OpenTelemetry/1.19.1": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.15.3"
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.19.1"
         },
         "compile": {
           "lib/net10.0/OpenTelemetry.dll": {
@@ -349,7 +372,7 @@
           }
         }
       },
-      "OpenTelemetry.Api/1.15.3": {
+      "OpenTelemetry.Api/1.19.1": {
         "type": "package",
         "compile": {
           "lib/net10.0/OpenTelemetry.Api.dll": {
@@ -362,10 +385,10 @@
           }
         }
       },
-      "OpenTelemetry.Api.ProviderBuilderExtensions/1.15.3": {
+      "OpenTelemetry.Api.ProviderBuilderExtensions/1.19.1": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry.Api": "1.15.3"
+          "OpenTelemetry.Api": "1.19.1"
         },
         "compile": {
           "lib/net10.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
@@ -378,10 +401,10 @@
           }
         }
       },
-      "OpenTelemetry.Exporter.Console/1.15.3": {
+      "OpenTelemetry.Exporter.Console/1.19.1": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry": "1.15.3"
+          "OpenTelemetry": "1.19.1"
         },
         "compile": {
           "lib/net10.0/OpenTelemetry.Exporter.Console.dll": {
@@ -394,10 +417,10 @@
           }
         }
       },
-      "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.15.3": {
+      "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.19.1": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry": "1.15.3"
+          "OpenTelemetry": "1.19.1"
         },
         "compile": {
           "lib/net10.0/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll": {
@@ -410,10 +433,10 @@
           }
         }
       },
-      "OpenTelemetry.Exporter.Prometheus.AspNetCore/1.15.3-beta.1": {
+      "OpenTelemetry.Exporter.Prometheus.AspNetCore/1.19.1-beta.1": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry": "[1.15.3, 2.0.0)"
+          "OpenTelemetry": "[1.19.1, 2.0.0)"
         },
         "compile": {
           "lib/net10.0/OpenTelemetry.Exporter.Prometheus.AspNetCore.dll": {
@@ -429,10 +452,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "OpenTelemetry.Extensions.Hosting/1.15.3": {
+      "OpenTelemetry.Extensions.Hosting/1.19.1": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry": "1.15.3"
+          "OpenTelemetry": "1.19.1"
         },
         "compile": {
           "lib/net10.0/OpenTelemetry.Extensions.Hosting.dll": {
@@ -445,38 +468,38 @@
           }
         }
       },
-      "OpenTelemetry.Instrumentation.AspNetCore/1.15.1": {
+      "OpenTelemetry.Instrumentation.AspNetCore/1.19.0": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry.Api.ProviderBuilderExtensions": "[1.15.0, 2.0.0)"
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "[1.19.0, 2.0.0)"
         },
         "compile": {
           "lib/net10.0/OpenTelemetry.Instrumentation.AspNetCore.dll": {
-            "related": ".xml"
+            "related": ".dll.sigstore.json;.xml"
           }
         },
         "runtime": {
           "lib/net10.0/OpenTelemetry.Instrumentation.AspNetCore.dll": {
-            "related": ".xml"
+            "related": ".dll.sigstore.json;.xml"
           }
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
       },
-      "OpenTelemetry.Instrumentation.EntityFrameworkCore/1.15.0-beta.1": {
+      "OpenTelemetry.Instrumentation.EntityFrameworkCore/1.19.1-beta.1": {
         "type": "package",
         "dependencies": {
-          "OpenTelemetry.Api.ProviderBuilderExtensions": "[1.15.0, 2.0.0)"
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "[1.19.1, 2.0.0)"
         },
         "compile": {
           "lib/net10.0/OpenTelemetry.Instrumentation.EntityFrameworkCore.dll": {
-            "related": ".xml"
+            "related": ".dll.sigstore.json;.xml"
           }
         },
         "runtime": {
           "lib/net10.0/OpenTelemetry.Instrumentation.EntityFrameworkCore.dll": {
-            "related": ".xml"
+            "related": ".dll.sigstore.json;.xml"
           }
         }
       },
@@ -496,7 +519,7 @@
           }
         }
       },
-      "Serilog/4.3.1": {
+      "Serilog/4.4.0": {
         "type": "package",
         "compile": {
           "lib/net10.0/Serilog.dll": {
@@ -512,13 +535,13 @@
           "buildTransitive/Serilog.targets": {}
         }
       },
-      "Swashbuckle.AspNetCore/10.1.7": {
+      "Swashbuckle.AspNetCore/10.2.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "10.0.0",
-          "Swashbuckle.AspNetCore.Swagger": "10.1.7",
-          "Swashbuckle.AspNetCore.SwaggerGen": "10.1.7",
-          "Swashbuckle.AspNetCore.SwaggerUI": "10.1.7"
+          "Swashbuckle.AspNetCore.Swagger": "10.2.3",
+          "Swashbuckle.AspNetCore.SwaggerGen": "10.2.3",
+          "Swashbuckle.AspNetCore.SwaggerUI": "10.2.3"
         },
         "build": {
           "build/Swashbuckle.AspNetCore.props": {}
@@ -527,10 +550,10 @@
           "buildMultiTargeting/Swashbuckle.AspNetCore.props": {}
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/10.1.7": {
+      "Swashbuckle.AspNetCore.Swagger/10.2.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.OpenApi": "2.4.1"
+          "Microsoft.OpenApi": "2.7.5"
         },
         "compile": {
           "lib/net10.0/Swashbuckle.AspNetCore.Swagger.dll": {
@@ -546,10 +569,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/10.1.7": {
+      "Swashbuckle.AspNetCore.SwaggerGen/10.2.3": {
         "type": "package",
         "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "10.1.7"
+          "Swashbuckle.AspNetCore.Swagger": "10.2.3"
         },
         "compile": {
           "lib/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
@@ -562,7 +585,7 @@
           }
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerUI/10.1.7": {
+      "Swashbuckle.AspNetCore.SwaggerUI/10.2.3": {
         "type": "package",
         "compile": {
           "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
@@ -578,19 +601,19 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "System.IdentityModel.Tokens.Jwt/8.0.1": {
+      "System.IdentityModel.Tokens.Jwt/8.19.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "8.0.1",
-          "Microsoft.IdentityModel.Tokens": "8.0.1"
+          "Microsoft.IdentityModel.JsonWebTokens": "8.19.2",
+          "Microsoft.IdentityModel.Tokens": "8.19.2"
         },
         "compile": {
-          "lib/net9.0/System.IdentityModel.Tokens.Jwt.dll": {
+          "lib/net10.0/System.IdentityModel.Tokens.Jwt.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/System.IdentityModel.Tokens.Jwt.dll": {
+          "lib/net10.0/System.IdentityModel.Tokens.Jwt.dll": {
             "related": ".xml"
           }
         }
@@ -601,7 +624,7 @@
         "dependencies": {
           "Jobee.Workplace.Shared.Common": "1.0.0",
           "Jobee.Workplace.Shared.Contracts": "1.0.0",
-          "MediatR": "14.1.0",
+          "MediatR": "14.2.0",
           "MediatR.Contracts": "2.0.1",
           "Scrutor": "7.0.0"
         },
@@ -651,9 +674,9 @@
         "dependencies": {
           "Jobee.Workplace.Shared.Application": "1.0.0",
           "Jobee.Workplace.Shared.Domain": "1.0.0",
-          "MassTransit.Abstractions": "9.0.1",
-          "Microsoft.EntityFrameworkCore": "10.0.7",
-          "Serilog": "4.3.1"
+          "MassTransit.Abstractions": "9.2.2",
+          "Microsoft.EntityFrameworkCore": "10.0.12",
+          "Serilog": "4.4.0"
         },
         "compile": {
           "bin/placeholder/Jobee.Workplace.Shared.Infrastructure.dll": {}
@@ -665,40 +688,44 @@
     }
   },
   "libraries": {
-    "Asp.Versioning.Abstractions/8.1.0": {
-      "sha512": "mpeNZyMdvrHztJwR1sXIUQ+3iioEU97YMBnFA9WLbsPOYhGwDJnqJMmEd8ny7kcmS9OjTHoEuX/bSXXY3brIFA==",
+    "Asp.Versioning.Abstractions/10.2.1": {
+      "sha512": "jMBztsVim+rYVrkNY23dMuOjTGXGQ9+je1xb3i17KgUof7OcBZtMMDduEWoCQ52SpTlYqKsuzgJyUMCMOFCBfg==",
       "type": "package",
-      "path": "asp.versioning.abstractions/8.1.0",
+      "path": "asp.versioning.abstractions/10.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "README.md",
-        "asp.versioning.abstractions.8.1.0.nupkg.sha512",
+        "analyzers/dotnet/cs/Asp.Versioning.Analyzers.dll",
+        "asp.versioning.abstractions.10.2.1.nupkg.sha512",
         "asp.versioning.abstractions.nuspec",
+        "buildTransitive/Asp.Versioning.Abstractions.targets",
         "icon.png",
-        "lib/net8.0/Asp.Versioning.Abstractions.dll",
-        "lib/net8.0/Asp.Versioning.Abstractions.xml",
+        "lib/net10.0/Asp.Versioning.Abstractions.dll",
+        "lib/net10.0/Asp.Versioning.Abstractions.xml",
         "lib/netstandard1.0/Asp.Versioning.Abstractions.dll",
         "lib/netstandard1.0/Asp.Versioning.Abstractions.xml",
         "lib/netstandard2.0/Asp.Versioning.Abstractions.dll",
         "lib/netstandard2.0/Asp.Versioning.Abstractions.xml"
       ]
     },
-    "Asp.Versioning.Http/8.1.0": {
-      "sha512": "Xu4xF62Cu9JqYi/CTa2TiK5kyHoa4EluPynj/bPFWDmlTIPzuJQbBI5RgFYVRFHjFVvWMoA77acRaFu7i7Wzqg==",
+    "Asp.Versioning.Http/10.2.3": {
+      "sha512": "tx/OIyp39OP2uM57MHn8GqRSCi7+XYFU3/KqcPeiqt8rQE+oiK4bRcMXZvShtiS+SbtifqXy4zg6vr5+LPubNQ==",
       "type": "package",
-      "path": "asp.versioning.http/8.1.0",
+      "path": "asp.versioning.http/10.2.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "README.md",
-        "asp.versioning.http.8.1.0.nupkg.sha512",
+        "analyzers/dotnet/cs/Asp.Versioning.Api.Analyzers.dll",
+        "asp.versioning.http.10.2.3.nupkg.sha512",
         "asp.versioning.http.nuspec",
+        "buildTransitive/Asp.Versioning.Http.targets",
         "icon.png",
-        "lib/net8.0/Asp.Versioning.Http.dll",
-        "lib/net8.0/Asp.Versioning.Http.xml"
+        "lib/net10.0/Asp.Versioning.Http.dll",
+        "lib/net10.0/Asp.Versioning.Http.xml"
       ]
     },
     "FluentValidation/12.1.1": {
@@ -731,10 +758,10 @@
         "lib/net8.0/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
-    "MassTransit.Abstractions/9.0.1": {
-      "sha512": "Rh3Bj/8VOdaUat2Zepbe1cfqQ+20Pqd9zoUme8w50qXISZ9p6yuxBXNNBazS16TN6Kfd4FLxuMUtjY928Rxqdw==",
+    "MassTransit.Abstractions/9.2.2": {
+      "sha512": "IiHPBPoeZ8kjvC00xMsUT/mwHIqEkyQuf+KCupGu4kmeBUU9huuK7iBSH666S83azr/yYkYMVxa1o5ZbZLvISw==",
       "type": "package",
-      "path": "masstransit.abstractions/9.0.1",
+      "path": "masstransit.abstractions/9.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -749,15 +776,15 @@
         "lib/net9.0/MassTransit.Abstractions.xml",
         "lib/netstandard2.0/MassTransit.Abstractions.dll",
         "lib/netstandard2.0/MassTransit.Abstractions.xml",
-        "masstransit.abstractions.9.0.1.nupkg.sha512",
+        "masstransit.abstractions.9.2.2.nupkg.sha512",
         "masstransit.abstractions.nuspec",
         "mt-logo-small.png"
       ]
     },
-    "MediatR/14.1.0": {
-      "sha512": "pdxza1pLqAk+06LV3THzNJrw5K5Ah6EC17TEkoC90gsAxwtXDJAQrGuDSDinHGgxWKWEn5ebqTNN3k1bLJOb0g==",
+    "MediatR/14.2.0": {
+      "sha512": "1vqNVS6ijU0IF78vDfIE99pi0iTa+M/1ztRlM98P+KL+Loi/O4knaR2+ex0AqbT5xBl01VFryjuYUAFtvGwzOQ==",
       "type": "package",
-      "path": "mediatr/14.1.0",
+      "path": "mediatr/14.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -774,7 +801,7 @@
         "lib/net9.0/MediatR.xml",
         "lib/netstandard2.0/MediatR.dll",
         "lib/netstandard2.0/MediatR.xml",
-        "mediatr.14.1.0.nupkg.sha512",
+        "mediatr.14.2.0.nupkg.sha512",
         "mediatr.nuspec"
       ]
     },
@@ -792,10 +819,10 @@
         "mediatr.contracts.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.7": {
-      "sha512": "g8klpd7OFJfJOq1EJKcBO8C8I8Dp0QUWoKDPUvvJYe+xunVyBHq6YxfF2CAc6+rkniV25iaWl+6RK87c25n4lA==",
+    "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.12": {
+      "sha512": "DeE+Bq2OqB3FikFkZk+7gFBeLOQhkSolejLrbi+a9zpfvXtW1Ff6Nd6DIvHXIm+pc4aM4+52vDy3jnuau0qoUQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/10.0.7",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/10.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -804,14 +831,14 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
         "lib/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
-        "microsoft.aspnetcore.authentication.jwtbearer.10.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.10.0.12.nupkg.sha512",
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/10.0.7": {
-      "sha512": "vKiAcGXG0BwNVw3bOjjWRLnp9tR18dR7MiwpvC94h0yFS+zfnzGHzS/JmmgwUdRixrGxrlIMRAWrVc+2DfAGlg==",
+    "Microsoft.AspNetCore.OpenApi/10.0.12": {
+      "sha512": "7RnQ/UKn+kK3JDLmTpW+vVqNErWthGPAVAy1aIiBzv4ucQ6g9NFvOJUuT0PHcpvcJxGVxctMxj6t+NESWMrgHQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/10.0.7",
+      "path": "microsoft.aspnetcore.openapi/10.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -822,14 +849,45 @@
         "build/Microsoft.AspNetCore.OpenApi.targets",
         "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net10.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.10.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore/10.0.7": {
-      "sha512": "G6yclVO5/csPzzsymV0SemY2NDqE31CP5M3jprF5IuO9wJsh4aUOfYD8HCLuDmM1D1CfReegVic48O2r79d46Q==",
+    "Microsoft.Bcl.Cryptography/10.0.2": {
+      "sha512": "LG9Yll3B5aNpxv0+D47g6LiOiKBIlodhcHdQwcYzo8VeexFLGqx5ymetmA2aBRyo9cCcWsQWrFsdbsr8LvmWDw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/10.0.7",
+      "path": "microsoft.bcl.cryptography/10.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Bcl.Cryptography.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Bcl.Cryptography.targets",
+        "lib/net10.0/Microsoft.Bcl.Cryptography.dll",
+        "lib/net10.0/Microsoft.Bcl.Cryptography.xml",
+        "lib/net462/Microsoft.Bcl.Cryptography.dll",
+        "lib/net462/Microsoft.Bcl.Cryptography.xml",
+        "lib/net8.0/Microsoft.Bcl.Cryptography.dll",
+        "lib/net8.0/Microsoft.Bcl.Cryptography.xml",
+        "lib/net9.0/Microsoft.Bcl.Cryptography.dll",
+        "lib/net9.0/Microsoft.Bcl.Cryptography.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.Cryptography.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.Cryptography.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.Cryptography.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.Cryptography.xml",
+        "microsoft.bcl.cryptography.10.0.2.nupkg.sha512",
+        "microsoft.bcl.cryptography.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore/10.0.12": {
+      "sha512": "e7OrVN8U5yr4kuwdTHWBHGVQIVsGfMkAr0Ej1/BnrS989Q0XBVANpIzNZ2bc1GvMZ0/XwMt5InTnmKskxGy99Q==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore/10.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -838,14 +896,14 @@
         "buildTransitive/net10.0/Microsoft.EntityFrameworkCore.props",
         "lib/net10.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net10.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.10.0.7.nupkg.sha512",
+        "microsoft.entityframeworkcore.10.0.12.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/10.0.7": {
-      "sha512": "TuxExnfIS/bSq3z2CbH0LwZH1oyj9iHhSGneU4fpxl3ikjZGZdSae9gcfnImV1rufH8f/ab1NnHwyL2BLyeZOg==",
+    "Microsoft.EntityFrameworkCore.Abstractions/10.0.12": {
+      "sha512": "kDrux7T6C3V/YYYe2LXr7x6AEsVyq5Y2YoTE9er1SwbDtap3z1g8RgxNh5eKQVyB4T+DKvBBJ4Ezd/VZzJQJZg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/10.0.7",
+      "path": "microsoft.entityframeworkcore.abstractions/10.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -853,21 +911,21 @@
         "PACKAGE.md",
         "lib/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net10.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.10.0.7.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.10.0.12.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/10.0.7": {
-      "sha512": "eZnMyiJzo249Ejg5CaFScvJS0u7neQfS9DXknAHTO6FHVMM99gO0byNXHGZmA/BOkZ13ngeVziQLHTMOtgescg==",
+    "Microsoft.EntityFrameworkCore.Analyzers/10.0.12": {
+      "sha512": "Kd4o2oO1A6dfKxjz5LS16QyLtpCFTUiFWwmBABETAXRsSImBdRdWeKjSgbbRhAMiV3a3/nWr95ZtzClT4uaADQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/10.0.7",
+      "path": "microsoft.entityframeworkcore.analyzers/10.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "docs/PACKAGE.md",
-        "microsoft.entityframeworkcore.analyzers.10.0.7.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.10.0.12.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -1131,10 +1189,10 @@
         "tools/net462/netstandard.dll"
       ]
     },
-    "Microsoft.Extensions.Caching.Hybrid/10.4.0": {
-      "sha512": "4V+aMLQeU/p4VcIWIcvGro0L6HynmL2TrelL04Ce1iotP6T5+kjxuZQvl6P1ObSXIRPCbVXtQSt1NxK0fRIuag==",
+    "Microsoft.Extensions.Caching.Hybrid/10.10.0": {
+      "sha512": "+16+e4EjjvBg8OedpucUqSFeI9liu0S5AQG2FHY7OnBOV1jGYduYBN8KNPh6noNRM1npF4RBWKONQoAR9nFDSA==",
       "type": "package",
-      "path": "microsoft.extensions.caching.hybrid/10.4.0",
+      "path": "microsoft.extensions.caching.hybrid/10.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1154,7 +1212,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Hybrid.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Caching.Hybrid.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Caching.Hybrid.xml",
-        "microsoft.extensions.caching.hybrid.10.4.0.nupkg.sha512",
+        "microsoft.extensions.caching.hybrid.10.10.0.nupkg.sha512",
         "microsoft.extensions.caching.hybrid.nuspec"
       ]
     },
@@ -1187,14 +1245,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.IdentityModel.Abstractions/8.14.0": {
-      "sha512": "iwbCpSjD3ehfTwBhtSNEtKPK0ICun6ov7Ibx6ISNA9bfwIyzI2Siwyi9eJFCJBwxowK9xcA1mj+jBWiigeqgcQ==",
+    "Microsoft.IdentityModel.Abstractions/8.19.2": {
+      "sha512": "HJbo/lnSfNHUfphPRT910poQc4T2/9+8svFLvzuaYHGAOJ2Tu+oEDqpX0BVP3BJ4OuUM1kylEKyaiX2fCAK3Cw==",
       "type": "package",
-      "path": "microsoft.identitymodel.abstractions/8.14.0",
+      "path": "microsoft.identitymodel.abstractions/8.19.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
+        "lib/net10.0/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net10.0/Microsoft.IdentityModel.Abstractions.xml",
         "lib/net462/Microsoft.IdentityModel.Abstractions.dll",
         "lib/net462/Microsoft.IdentityModel.Abstractions.xml",
         "lib/net472/Microsoft.IdentityModel.Abstractions.dll",
@@ -1207,18 +1267,20 @@
         "lib/net9.0/Microsoft.IdentityModel.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.xml",
-        "microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
+        "microsoft.identitymodel.abstractions.8.19.2.nupkg.sha512",
         "microsoft.identitymodel.abstractions.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.JsonWebTokens/8.14.0": {
-      "sha512": "4jOpiA4THdtpLyMdAb24dtj7+6GmvhOhxf5XHLYWmPKF8ApEnApal1UnJsKO4HxUWRXDA6C4WQVfYyqsRhpNpQ==",
+    "Microsoft.IdentityModel.JsonWebTokens/8.19.2": {
+      "sha512": "ui3fuBT4fs8kdKfBthI4NzLYIBIneEVS8UrL1JVBzAn80UiKmngBBi0BEByE7n/9c+EElcfFlCMFFTqpkBSLNA==",
       "type": "package",
-      "path": "microsoft.identitymodel.jsonwebtokens/8.14.0",
+      "path": "microsoft.identitymodel.jsonwebtokens/8.19.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
+        "lib/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net10.0/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/net462/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/net462/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/net472/Microsoft.IdentityModel.JsonWebTokens.dll",
@@ -1231,18 +1293,20 @@
         "lib/net9.0/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.8.19.2.nupkg.sha512",
         "microsoft.identitymodel.jsonwebtokens.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Logging/8.14.0": {
-      "sha512": "eqqnemdW38CKZEHS6diA50BV94QICozDZEvSrsvN3SJXUFwVB9gy+/oz76gldP7nZliA16IglXjXTCTdmU/Ejg==",
+    "Microsoft.IdentityModel.Logging/8.19.2": {
+      "sha512": "r5YLDIxGOnkVJHrqXv/iD1FM1CgGrQOdriXuvuWvTPmKbnGANhEysq9XKmN6IHjf2a+9bAGEpnoRBsAQlvJU5w==",
       "type": "package",
-      "path": "microsoft.identitymodel.logging/8.14.0",
+      "path": "microsoft.identitymodel.logging/8.19.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
+        "lib/net10.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/net10.0/Microsoft.IdentityModel.Logging.xml",
         "lib/net462/Microsoft.IdentityModel.Logging.dll",
         "lib/net462/Microsoft.IdentityModel.Logging.xml",
         "lib/net472/Microsoft.IdentityModel.Logging.dll",
@@ -1255,17 +1319,20 @@
         "lib/net9.0/Microsoft.IdentityModel.Logging.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
-        "microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
+        "microsoft.identitymodel.logging.8.19.2.nupkg.sha512",
         "microsoft.identitymodel.logging.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Protocols/8.0.1": {
-      "sha512": "uA2vpKqU3I2mBBEaeJAWPTjT9v1TZrGWKdgK6G5qJd03CLx83kdiqO9cmiK8/n1erkHzFBwU/RphP83aAe3i3g==",
+    "Microsoft.IdentityModel.Protocols/8.19.2": {
+      "sha512": "sGxSsSrZXNmca6D+jHH2rVRyo2nNRd/g4H9CFbPmLLq0xgoH1U0orLWE5minfijw7+zq49tBs7txenbfAErRoQ==",
       "type": "package",
-      "path": "microsoft.identitymodel.protocols/8.0.1",
+      "path": "microsoft.identitymodel.protocols/8.19.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net10.0/Microsoft.IdentityModel.Protocols.xml",
         "lib/net462/Microsoft.IdentityModel.Protocols.dll",
         "lib/net462/Microsoft.IdentityModel.Protocols.xml",
         "lib/net472/Microsoft.IdentityModel.Protocols.dll",
@@ -1278,17 +1345,20 @@
         "lib/net9.0/Microsoft.IdentityModel.Protocols.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.xml",
-        "microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
+        "microsoft.identitymodel.protocols.8.19.2.nupkg.sha512",
         "microsoft.identitymodel.protocols.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.0.1": {
-      "sha512": "AQDbfpL+yzuuGhO/mQhKNsp44pm5Jv8/BI4KiFXR7beVGZoSH35zMV3PrmcfvSTsyI6qrcR898NzUauD6SRigg==",
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.19.2": {
+      "sha512": "1XOcyY36cVymzE3qKdzKaUEZ4Pzt7ZpSa14JZoPPK1NLFUkQDs85TCqpV6XDo0YjFXj6nVK00AfOHppjghjhtw==",
       "type": "package",
-      "path": "microsoft.identitymodel.protocols.openidconnect/8.0.1",
+      "path": "microsoft.identitymodel.protocols.openidconnect/8.19.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
         "lib/net462/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
         "lib/net462/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
         "lib/net472/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
@@ -1301,18 +1371,20 @@
         "lib/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
-        "microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
+        "microsoft.identitymodel.protocols.openidconnect.8.19.2.nupkg.sha512",
         "microsoft.identitymodel.protocols.openidconnect.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Tokens/8.14.0": {
-      "sha512": "lKIZiBiGd36k02TCdMHp1KlNWisyIvQxcYJvIkz7P4gSQ9zi8dgh6S5Grj8NNG7HWYIPfQymGyoZ6JB5d1Lo1g==",
+    "Microsoft.IdentityModel.Tokens/8.19.2": {
+      "sha512": "GtPC1S02uH1gOO4fQ+zRysIicKmEXaYFP8PIkdJYXqMyruYhopre4ozVHp0XiDSA0+GJvOZH9prxCPvgBMg4Ww==",
       "type": "package",
-      "path": "microsoft.identitymodel.tokens/8.14.0",
+      "path": "microsoft.identitymodel.tokens/8.19.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
+        "lib/net10.0/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net10.0/Microsoft.IdentityModel.Tokens.xml",
         "lib/net462/Microsoft.IdentityModel.Tokens.dll",
         "lib/net462/Microsoft.IdentityModel.Tokens.xml",
         "lib/net472/Microsoft.IdentityModel.Tokens.dll",
@@ -1325,14 +1397,14 @@
         "lib/net9.0/Microsoft.IdentityModel.Tokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
-        "microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
+        "microsoft.identitymodel.tokens.8.19.2.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.OpenApi/2.7.5": {
-      "sha512": "0FA67RSnRM4tcBKqiqVu/HPdZ9+QOKbmeRjxRUGTCjPU4C0bmUhd97Dso7Yild5P7nOV6GxJ2xrK0Kv/O9xp0w==",
+    "Microsoft.OpenApi/2.12.0": {
+      "sha512": "0xB/be+f6qYOhvQPUrVsLrau+fkowYv6gt9RIkajMhwT7sZnqtcA797yW3bS5kgSje+AQW4xZgyLnW641YFioQ==",
       "type": "package",
-      "path": "microsoft.openapi/2.7.5",
+      "path": "microsoft.openapi/2.12.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1343,14 +1415,14 @@
         "lib/netstandard2.0/Microsoft.OpenApi.dll",
         "lib/netstandard2.0/Microsoft.OpenApi.pdb",
         "lib/netstandard2.0/Microsoft.OpenApi.xml",
-        "microsoft.openapi.2.7.5.nupkg.sha512",
+        "microsoft.openapi.2.12.0.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
     },
-    "OpenTelemetry/1.15.3": {
-      "sha512": "N0i6WjPoHPbZyms1ugbDIFAJFuGlpeExJMU/+XSL0lQRUkg/D0utFkDoLXf8Z1km5B+xVZ2GyMXXiX8qdeNmPg==",
+    "OpenTelemetry/1.19.1": {
+      "sha512": "6ywhc3upf+dq8EsOohj7I7zS3l4yX9vfbtFkvyEC8xIUY4Z9iDIOVuke356eCAzIZaWtmwmmyl2UXYCp5n7I3Q==",
       "type": "package",
-      "path": "opentelemetry/1.15.3",
+      "path": "opentelemetry/1.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1376,14 +1448,14 @@
         "lib/netstandard2.1/OpenTelemetry.dll.sigstore.json",
         "lib/netstandard2.1/OpenTelemetry.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.1.15.3.nupkg.sha512",
+        "opentelemetry.1.19.1.nupkg.sha512",
         "opentelemetry.nuspec"
       ]
     },
-    "OpenTelemetry.Api/1.15.3": {
-      "sha512": "fX+fkCysfPut+qCcT3bKqyX4QN9Saf4CgX8HLOHywEVD+Xr7sULtfuypITpoDysjx8R59dn/3mWhgimMH8cm/g==",
+    "OpenTelemetry.Api/1.19.1": {
+      "sha512": "9JKIH+xrV0HNTFjQC8zrx9gZpDOMEljN5Htg/U0VE2IvO3N+7bKALCCsGy5tp09marX5dd8UkrgQFoLaulIBRw==",
       "type": "package",
-      "path": "opentelemetry.api/1.15.3",
+      "path": "opentelemetry.api/1.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1406,14 +1478,14 @@
         "lib/netstandard2.0/OpenTelemetry.Api.dll.sigstore.json",
         "lib/netstandard2.0/OpenTelemetry.Api.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.api.1.15.3.nupkg.sha512",
+        "opentelemetry.api.1.19.1.nupkg.sha512",
         "opentelemetry.api.nuspec"
       ]
     },
-    "OpenTelemetry.Api.ProviderBuilderExtensions/1.15.3": {
-      "sha512": "SYn0lqYDwLMWhv/zlNGsQcl2yX++yTumanX46bmOZE/ZDOd1WjPBO2kZaZgKLEZTZk48pavIFGJ6vOvxXgWVFQ==",
+    "OpenTelemetry.Api.ProviderBuilderExtensions/1.19.1": {
+      "sha512": "HtGe72B/IhzKqdU0a3fNE5osax/Cegwxd+p4u6lOFy20nsgmeaFuP2NRyFs1WvrOv/bpkII3IvvBkKoZXG8BLg==",
       "type": "package",
-      "path": "opentelemetry.api.providerbuilderextensions/1.15.3",
+      "path": "opentelemetry.api.providerbuilderextensions/1.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1436,14 +1508,14 @@
         "lib/netstandard2.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll.sigstore.json",
         "lib/netstandard2.0/OpenTelemetry.Api.ProviderBuilderExtensions.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.api.providerbuilderextensions.1.15.3.nupkg.sha512",
+        "opentelemetry.api.providerbuilderextensions.1.19.1.nupkg.sha512",
         "opentelemetry.api.providerbuilderextensions.nuspec"
       ]
     },
-    "OpenTelemetry.Exporter.Console/1.15.3": {
-      "sha512": "QBGOoPwLHDXX+hXeUpspOjsqEn4vMkLw672QN+MzVWFBzjf625DdxLxhzowS1J/dRtW93U34rRbJec+4808fkg==",
+    "OpenTelemetry.Exporter.Console/1.19.1": {
+      "sha512": "rLxjM+ZmSZZxRvtAuPFpaKIZ9t7D1obFZdxAr1WyCJmqv4yV7xJl2AlhCUoZghUmIXe5AOHXFevp3aSQcSTo+Q==",
       "type": "package",
-      "path": "opentelemetry.exporter.console/1.15.3",
+      "path": "opentelemetry.exporter.console/1.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1466,14 +1538,14 @@
         "lib/netstandard2.0/OpenTelemetry.Exporter.Console.dll.sigstore.json",
         "lib/netstandard2.0/OpenTelemetry.Exporter.Console.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.exporter.console.1.15.3.nupkg.sha512",
+        "opentelemetry.exporter.console.1.19.1.nupkg.sha512",
         "opentelemetry.exporter.console.nuspec"
       ]
     },
-    "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.15.3": {
-      "sha512": "FEXJepcseTGbATiCkUfP7ipoFEYYfl/0UmmUwi0KxCPg9PaUA8ab2P1LGopK+/HExasJ1ZutFhZrN6WvUIR23g==",
+    "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.19.1": {
+      "sha512": "vsYYOBf/KxNubnuoja8pjJ9LG0zCC9HAYPay+R6N5ZKZMbhNdKWbaq6JZqJqTvK+55rudiqErJySekf9ql8okA==",
       "type": "package",
-      "path": "opentelemetry.exporter.opentelemetryprotocol/1.15.3",
+      "path": "opentelemetry.exporter.opentelemetryprotocol/1.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1499,14 +1571,14 @@
         "lib/netstandard2.1/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll.sigstore.json",
         "lib/netstandard2.1/OpenTelemetry.Exporter.OpenTelemetryProtocol.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.exporter.opentelemetryprotocol.1.15.3.nupkg.sha512",
+        "opentelemetry.exporter.opentelemetryprotocol.1.19.1.nupkg.sha512",
         "opentelemetry.exporter.opentelemetryprotocol.nuspec"
       ]
     },
-    "OpenTelemetry.Exporter.Prometheus.AspNetCore/1.15.3-beta.1": {
-      "sha512": "ZnF47rY81rHF36UFVQPfx5eIAbSFEkyrYjDsKBFuFDeLzgeaC91cA455OOtqe7yRtsRKXoHGbkcZOsD9IipKgQ==",
+    "OpenTelemetry.Exporter.Prometheus.AspNetCore/1.19.1-beta.1": {
+      "sha512": "AMfdsdCo6rKCNJv0j3Yx1FJF3pmOgTZjHDpKllRwpxKlO6UIcpcbWFFJUFYd9+UkJWl7LO2IzTpA75Qrl0fvcw==",
       "type": "package",
-      "path": "opentelemetry.exporter.prometheus.aspnetcore/1.15.3-beta.1",
+      "path": "opentelemetry.exporter.prometheus.aspnetcore/1.19.1-beta.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1523,14 +1595,14 @@
         "lib/net9.0/OpenTelemetry.Exporter.Prometheus.AspNetCore.dll.sigstore.json",
         "lib/net9.0/OpenTelemetry.Exporter.Prometheus.AspNetCore.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.exporter.prometheus.aspnetcore.1.15.3-beta.1.nupkg.sha512",
+        "opentelemetry.exporter.prometheus.aspnetcore.1.19.1-beta.1.nupkg.sha512",
         "opentelemetry.exporter.prometheus.aspnetcore.nuspec"
       ]
     },
-    "OpenTelemetry.Extensions.Hosting/1.15.3": {
-      "sha512": "u8n/W8yIlqv0BXZmvId1iVaeWXG42tGKdTkuLYg5g57Y/r9CeUNzqtrSHNdG5IoO8iPX79w3v+WsbAHgUQbfeg==",
+    "OpenTelemetry.Extensions.Hosting/1.19.1": {
+      "sha512": "3qqZfVmW8mKA2/fRwI83o8z+yZd33KbEqRlXrlX0+3e/U7i+z0MQiCr0L3Axxa0jGdiylIrpWX4DIT9nAbJ00A==",
       "type": "package",
-      "path": "opentelemetry.extensions.hosting/1.15.3",
+      "path": "opentelemetry.extensions.hosting/1.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1553,47 +1625,53 @@
         "lib/netstandard2.0/OpenTelemetry.Extensions.Hosting.dll.sigstore.json",
         "lib/netstandard2.0/OpenTelemetry.Extensions.Hosting.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.extensions.hosting.1.15.3.nupkg.sha512",
+        "opentelemetry.extensions.hosting.1.19.1.nupkg.sha512",
         "opentelemetry.extensions.hosting.nuspec"
       ]
     },
-    "OpenTelemetry.Instrumentation.AspNetCore/1.15.1": {
-      "sha512": "wXaZTu6LHY8xcbRd6ClcrtjHqGVoGYCcArXEZA3iUjUcYSVYwDGyPU0PdkwTfylxv8JeCCVDQhVb0fT7xBJjGA==",
+    "OpenTelemetry.Instrumentation.AspNetCore/1.19.0": {
+      "sha512": "reypo7g0Nzyssg1EkbfWU6W58CVFgtgkSEGrFXtbpA+bNit7HUs7587DOkOdPCgqWr3IL4f6X9B2yhnU6POrFA==",
       "type": "package",
-      "path": "opentelemetry.instrumentation.aspnetcore/1.15.1",
+      "path": "opentelemetry.instrumentation.aspnetcore/1.19.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "README.md",
         "lib/net10.0/OpenTelemetry.Instrumentation.AspNetCore.dll",
+        "lib/net10.0/OpenTelemetry.Instrumentation.AspNetCore.dll.sigstore.json",
         "lib/net10.0/OpenTelemetry.Instrumentation.AspNetCore.xml",
         "lib/net8.0/OpenTelemetry.Instrumentation.AspNetCore.dll",
+        "lib/net8.0/OpenTelemetry.Instrumentation.AspNetCore.dll.sigstore.json",
         "lib/net8.0/OpenTelemetry.Instrumentation.AspNetCore.xml",
         "lib/netstandard2.0/OpenTelemetry.Instrumentation.AspNetCore.dll",
+        "lib/netstandard2.0/OpenTelemetry.Instrumentation.AspNetCore.dll.sigstore.json",
         "lib/netstandard2.0/OpenTelemetry.Instrumentation.AspNetCore.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.instrumentation.aspnetcore.1.15.1.nupkg.sha512",
+        "opentelemetry.instrumentation.aspnetcore.1.19.0.nupkg.sha512",
         "opentelemetry.instrumentation.aspnetcore.nuspec"
       ]
     },
-    "OpenTelemetry.Instrumentation.EntityFrameworkCore/1.15.0-beta.1": {
-      "sha512": "N01GzP+r8lpSBiqjRX0/WjSp17r+zk6dKvGKthiASyFzF44lrJo8cA3ihXnw3p4Rnqg1mVjOYy19R6iJ84NTpg==",
+    "OpenTelemetry.Instrumentation.EntityFrameworkCore/1.19.1-beta.1": {
+      "sha512": "CC3mEM/dZwOguMdLR9RgJyacSJJt1m0qJjOBl8zYuTlG/LUJF2FYdVaHkhyvnhJY4X+TUxG+TZv2OZc6nvF38g==",
       "type": "package",
-      "path": "opentelemetry.instrumentation.entityframeworkcore/1.15.0-beta.1",
+      "path": "opentelemetry.instrumentation.entityframeworkcore/1.19.1-beta.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "README.md",
         "lib/net10.0/OpenTelemetry.Instrumentation.EntityFrameworkCore.dll",
+        "lib/net10.0/OpenTelemetry.Instrumentation.EntityFrameworkCore.dll.sigstore.json",
         "lib/net10.0/OpenTelemetry.Instrumentation.EntityFrameworkCore.xml",
         "lib/net8.0/OpenTelemetry.Instrumentation.EntityFrameworkCore.dll",
+        "lib/net8.0/OpenTelemetry.Instrumentation.EntityFrameworkCore.dll.sigstore.json",
         "lib/net8.0/OpenTelemetry.Instrumentation.EntityFrameworkCore.xml",
         "lib/netstandard2.0/OpenTelemetry.Instrumentation.EntityFrameworkCore.dll",
+        "lib/netstandard2.0/OpenTelemetry.Instrumentation.EntityFrameworkCore.dll.sigstore.json",
         "lib/netstandard2.0/OpenTelemetry.Instrumentation.EntityFrameworkCore.xml",
         "opentelemetry-icon-color.png",
-        "opentelemetry.instrumentation.entityframeworkcore.1.15.0-beta.1.nupkg.sha512",
+        "opentelemetry.instrumentation.entityframeworkcore.1.19.1-beta.1.nupkg.sha512",
         "opentelemetry.instrumentation.entityframeworkcore.nuspec"
       ]
     },
@@ -1621,10 +1699,10 @@
         "scrutor.nuspec"
       ]
     },
-    "Serilog/4.3.1": {
-      "sha512": "savYe7h5yRlkqBVOwP8cIRDOdqKiPmYCU4W87JH38sBmcKD5EBoXvQIw6bNEvZ/pTe1gsiye3VFCzBsoppGkXQ==",
+    "Serilog/4.4.0": {
+      "sha512": "ZC6Le3rr4TVJJjS4KsQAesxeF1EhW9qcZmmG7eP5Y2G3+gTGkJEUXkq4+tZNPtyp05I0wWOxnIjwtxFweJsObw==",
       "type": "package",
-      "path": "serilog/4.3.1",
+      "path": "serilog/4.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1646,28 +1724,28 @@
         "lib/net9.0/Serilog.xml",
         "lib/netstandard2.0/Serilog.dll",
         "lib/netstandard2.0/Serilog.xml",
-        "serilog.4.3.1.nupkg.sha512",
+        "serilog.4.4.0.nupkg.sha512",
         "serilog.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore/10.1.7": {
-      "sha512": "vgef8DPT411JU5JjHiDbr0WOxsIVuAvegPGtqmm4Na4JRl/264dfBJcGkiPHsAr5P+Vda+qN1rZKRtBl1rF9aA==",
+    "Swashbuckle.AspNetCore/10.2.3": {
+      "sha512": "8KNh1RWvofdU6DVLyBs4Z/OpUMnmf8oNvJQc0QxpwySRbi42bwLfdVMMrXZWANg5U5KQGQq1xW6r/hlcqw99tQ==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore/10.1.7",
+      "path": "swashbuckle.aspnetcore/10.2.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/Swashbuckle.AspNetCore.props",
         "buildMultiTargeting/Swashbuckle.AspNetCore.props",
         "docs/package-readme.md",
-        "swashbuckle.aspnetcore.10.1.7.nupkg.sha512",
+        "swashbuckle.aspnetcore.10.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.Swagger/10.1.7": {
-      "sha512": "EjLibt/d/QuRv170GoihTbcPUpgzSFm2WKHhnGJFZQ03JYzfuitsM79azaAR8NBwRunU7yScSX6HRE5JUlrEMQ==",
+    "Swashbuckle.AspNetCore.Swagger/10.2.3": {
+      "sha512": "1jUUs3WQnrS0FUtaZPLSy1yYMEwS1zlvDmvQ2/eldPHUANX0LJSLVZecCMgSMdeGiRqeaRrIXLtSz++TCiTMww==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/10.1.7",
+      "path": "swashbuckle.aspnetcore.swagger/10.2.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1681,14 +1759,14 @@
         "lib/net9.0/Swashbuckle.AspNetCore.Swagger.pdb",
         "lib/net9.0/Swashbuckle.AspNetCore.Swagger.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swagger.10.1.7.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.10.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swagger.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/10.1.7": {
-      "sha512": "PuubO9BjvNn6U3D9kLpuWKY1JtziWw7SsGBq0age1E50uQjQ8Fzl8s0EwzrLfANqYJNgDnJi9l7N1QxcGVB2Zw==",
+    "Swashbuckle.AspNetCore.SwaggerGen/10.2.3": {
+      "sha512": "y7t4coDRAeFYChmvlMRiH2OjbiRrm9AVIDgt17fQfs3x9PVAI5PiwWYOhg+4F13R4Q36WDc9lqfoOnNa3tNbGg==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggergen/10.1.7",
+      "path": "swashbuckle.aspnetcore.swaggergen/10.2.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1702,14 +1780,14 @@
         "lib/net9.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
         "lib/net9.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swaggergen.10.1.7.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.10.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggergen.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerUI/10.1.7": {
-      "sha512": "iJo3ODyUb/M8Vm8AH1r9y9iAba0w95xsCn3zFVl96ISRHbTDWxi+l7oFVCZqUEdjd97B8VMDPnMliWAdomR8uw==",
+    "Swashbuckle.AspNetCore.SwaggerUI/10.2.3": {
+      "sha512": "nthWONRs/FJ4yyG206g1cC52WEG8EqrjuMWjGdR+5XG7lbjFto6NqcI9EMICgVFom/UivIjUVwI76ZHbHwTPfQ==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggerui/10.1.7",
+      "path": "swashbuckle.aspnetcore.swaggerui/10.2.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1723,17 +1801,20 @@
         "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
         "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swaggerui.10.1.7.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
-    "System.IdentityModel.Tokens.Jwt/8.0.1": {
-      "sha512": "GJw3bYkWpOgvN3tJo5X4lYUeIFA2HD293FPUhKmp7qxS+g5ywAb34Dnd3cDAFLkcMohy5XTpoaZ4uAHuw0uSPQ==",
+    "System.IdentityModel.Tokens.Jwt/8.19.2": {
+      "sha512": "gqhDC/icByKEutygpr+OFgAmjwTVowyzFjWB8K0q1ww8uFj5a1BQNL+QvijUl9uhq4p8OdDwcAIrjVC+eC9FVA==",
       "type": "package",
-      "path": "system.identitymodel.tokens.jwt/8.0.1",
+      "path": "system.identitymodel.tokens.jwt/8.19.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "README.md",
+        "lib/net10.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net10.0/System.IdentityModel.Tokens.Jwt.xml",
         "lib/net462/System.IdentityModel.Tokens.Jwt.dll",
         "lib/net462/System.IdentityModel.Tokens.Jwt.xml",
         "lib/net472/System.IdentityModel.Tokens.Jwt.dll",
@@ -1746,7 +1827,7 @@
         "lib/net9.0/System.IdentityModel.Tokens.Jwt.xml",
         "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
         "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
-        "system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.8.19.2.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
@@ -1778,21 +1859,21 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Asp.Versioning.Http >= 8.1.0",
+      "Asp.Versioning.Http >= 10.2.3",
       "FluentValidation >= 12.1.1",
       "FluentValidation.DependencyInjectionExtensions >= 12.1.1",
       "Jobee.Workplace.Shared.Infrastructure >= 1.0.0",
-      "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.7",
-      "Microsoft.AspNetCore.OpenApi >= 10.0.7",
-      "Microsoft.Extensions.Caching.Hybrid >= 10.4.0",
-      "OpenTelemetry >= 1.15.3",
-      "OpenTelemetry.Exporter.Console >= 1.15.3",
-      "OpenTelemetry.Exporter.OpenTelemetryProtocol >= 1.15.3",
-      "OpenTelemetry.Exporter.Prometheus.AspNetCore >= 1.15.3-beta.1",
-      "OpenTelemetry.Extensions.Hosting >= 1.15.3",
-      "OpenTelemetry.Instrumentation.AspNetCore >= 1.15.1",
-      "OpenTelemetry.Instrumentation.EntityFrameworkCore >= 1.15.0-beta.1",
-      "Swashbuckle.AspNetCore >= 10.1.7"
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.12",
+      "Microsoft.AspNetCore.OpenApi >= 10.0.12",
+      "Microsoft.Extensions.Caching.Hybrid >= 10.10.0",
+      "OpenTelemetry >= 1.19.1",
+      "OpenTelemetry.Exporter.Console >= 1.19.1",
+      "OpenTelemetry.Exporter.OpenTelemetryProtocol >= 1.19.1",
+      "OpenTelemetry.Exporter.Prometheus.AspNetCore >= 1.19.1-beta.1",
+      "OpenTelemetry.Extensions.Hosting >= 1.19.1",
+      "OpenTelemetry.Instrumentation.AspNetCore >= 1.19.0",
+      "OpenTelemetry.Instrumentation.EntityFrameworkCore >= 1.19.1-beta.1",
+      "Swashbuckle.AspNetCore >= 10.2.3"
     ]
   },
   "packageFolders": {
@@ -1821,6 +1902,7 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
             "/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Infrastructure/Jobee.Workplace.Shared.Infrastructure.csproj": {
@@ -1844,11 +1926,12 @@
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Asp.Versioning.Http": {
             "target": "Package",
-            "version": "[8.1.0, )",
+            "version": "[10.2.3, )",
             "versionCentrallyManaged": true
           },
           "FluentValidation": {
@@ -1863,94 +1946,93 @@
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
-            "version": "[10.0.7, )",
+            "version": "[10.0.12, )",
             "versionCentrallyManaged": true
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[10.0.7, )",
+            "version": "[10.0.12, )",
             "versionCentrallyManaged": true
           },
           "Microsoft.Extensions.Caching.Hybrid": {
             "target": "Package",
-            "version": "[10.4.0, )",
+            "version": "[10.10.0, )",
             "versionCentrallyManaged": true
           },
           "OpenTelemetry": {
             "target": "Package",
-            "version": "[1.15.3, )",
+            "version": "[1.19.1, )",
             "versionCentrallyManaged": true
           },
           "OpenTelemetry.Exporter.Console": {
             "target": "Package",
-            "version": "[1.15.3, )",
+            "version": "[1.19.1, )",
             "versionCentrallyManaged": true
           },
           "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
             "target": "Package",
-            "version": "[1.15.3, )",
+            "version": "[1.19.1, )",
             "versionCentrallyManaged": true
           },
           "OpenTelemetry.Exporter.Prometheus.AspNetCore": {
             "target": "Package",
-            "version": "[1.15.3-beta.1, )",
+            "version": "[1.19.1-beta.1, )",
             "versionCentrallyManaged": true
           },
           "OpenTelemetry.Extensions.Hosting": {
             "target": "Package",
-            "version": "[1.15.3, )",
+            "version": "[1.19.1, )",
             "versionCentrallyManaged": true
           },
           "OpenTelemetry.Instrumentation.AspNetCore": {
             "target": "Package",
-            "version": "[1.15.1, )",
+            "version": "[1.19.0, )",
             "versionCentrallyManaged": true
           },
           "OpenTelemetry.Instrumentation.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[1.15.0-beta.1, )",
+            "version": "[1.19.1-beta.1, )",
             "versionCentrallyManaged": true
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "[10.1.7, )",
+            "version": "[10.2.3, )",
             "versionCentrallyManaged": true
           }
         },
         "centralPackageVersions": {
-          "Asp.Versioning.Http": "8.1.0",
+          "Asp.Versioning.Http": "10.2.3",
           "FluentValidation": "12.1.1",
           "FluentValidation.DependencyInjectionExtensions": "12.1.1",
-          "MassTransit.Abstractions": "9.0.1",
-          "MassTransit.EntityFrameworkCore": "9.0.1",
-          "MassTransit.Quartz": "9.0.1",
-          "MassTransit.RabbitMQ": "9.0.1",
-          "MediatR": "14.1.0",
+          "MassTransit.Abstractions": "9.2.2",
+          "MassTransit.EntityFrameworkCore": "9.2.2",
+          "MassTransit.Quartz": "9.2.2",
+          "MassTransit.RabbitMQ": "9.2.2",
+          "Mediator.Abstractions": "3.0.2",
+          "MediatR": "14.2.0",
           "MediatR.Contracts": "2.0.1",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.7",
-          "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.7",
-          "Microsoft.AspNetCore.OpenApi": "10.0.7",
-          "Microsoft.EntityFrameworkCore": "10.0.7",
-          "Microsoft.EntityFrameworkCore.Relational": "10.0.7",
-          "Microsoft.Extensions.Caching.Hybrid": "10.4.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "10.0.7",
-          "Microsoft.Extensions.Configuration.Binder": "10.0.7",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
-          "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
-          "Microsoft.OpenApi": "2.7.5",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1",
-          "OpenTelemetry": "1.15.3",
-          "OpenTelemetry.Exporter.Console": "1.15.3",
-          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
-          "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.15.3-beta.1",
-          "OpenTelemetry.Extensions.Hosting": "1.15.3",
-          "OpenTelemetry.Instrumentation.AspNetCore": "1.15.1",
-          "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.15.0-beta.1",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.12",
+          "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.12",
+          "Microsoft.AspNetCore.OpenApi": "10.0.12",
+          "Microsoft.EntityFrameworkCore": "10.0.12",
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.12",
+          "Microsoft.Extensions.Caching.Hybrid": "10.10.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.12",
+          "Microsoft.Extensions.Configuration.Binder": "10.0.12",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.12",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.12",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3",
+          "OpenTelemetry": "1.19.1",
+          "OpenTelemetry.Exporter.Console": "1.19.1",
+          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.19.1",
+          "OpenTelemetry.Exporter.Prometheus.AspNetCore": "1.19.1-beta.1",
+          "OpenTelemetry.Extensions.Hosting": "1.19.1",
+          "OpenTelemetry.Instrumentation.AspNetCore": "1.19.0",
+          "OpenTelemetry.Instrumentation.EntityFrameworkCore": "1.19.1-beta.1",
           "Scrutor": "7.0.0",
-          "Serilog": "4.3.1",
-          "Swashbuckle.AspNetCore": "10.1.7",
-          "System.Security.Cryptography.Xml": "10.0.10"
+          "Serilog": "4.4.0",
+          "Swashbuckle.AspNetCore": "10.2.3"
         },
         "imports": [
           "net461",
@@ -1971,7 +2053,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.110/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.112/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -2393,11 +2475,11 @@
     "net10.0": {
       "MassTransit.Abstractions": {
         "include": "Runtime, Compile, Native, BuildTransitive",
-        "version": "[9.0.1, )"
+        "version": "[9.2.2, )"
       },
       "MediatR": {
         "include": "Runtime, Compile, Native, BuildTransitive",
-        "version": "[14.1.0, )"
+        "version": "[14.2.0, )"
       },
       "MediatR.Contracts": {
         "include": "Runtime, Compile, Native, BuildTransitive",
@@ -2405,11 +2487,7 @@
       },
       "Microsoft.EntityFrameworkCore": {
         "include": "Runtime, Compile, Native, BuildTransitive",
-        "version": "[10.0.7, )"
-      },
-      "Microsoft.OpenApi": {
-        "include": "Runtime, Compile, Native, BuildTransitive",
-        "version": "[2.7.5, )"
+        "version": "[10.0.12, )"
       },
       "Scrutor": {
         "include": "Runtime, Compile, Native, BuildTransitive",
@@ -2417,7 +2495,7 @@
       },
       "Serilog": {
         "include": "Runtime, Compile, Native, BuildTransitive",
-        "version": "[4.3.1, )"
+        "version": "[4.4.0, )"
       }
     }
   }

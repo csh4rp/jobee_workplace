@@ -97,10 +97,15 @@ public static class Extensions
         return builder;
     }
 
-    public static IServiceCollection AddSwaggerWithBearerToken(this IServiceCollection serviceCollection,
+    private static IServiceCollection AddSwaggerWithBearerToken(this IServiceCollection serviceCollection,
         List<IWebAppModule> modules)
     {
+        // AV0021: the version-less explorer is deliberate. Every endpoint lives in the single
+        // 1.0 version set declared in PrepareRestApiPipeline, so the generated document needs no
+        // per-version grouping. Revisit once a second API version ships.
+#pragma warning disable AV0021
         serviceCollection.AddEndpointsApiExplorer()
+#pragma warning restore AV0021
             .AddSwaggerGen(opt =>
             {
                 opt.AddSecurityDefinition("Bearer",
