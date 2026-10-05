@@ -69,6 +69,22 @@
           }
         }
       },
+      "MassTransit/9.2.2": {
+        "type": "package",
+        "dependencies": {
+          "MassTransit.Abstractions": "9.2.2"
+        },
+        "compile": {
+          "lib/net10.0/MassTransit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/MassTransit.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MassTransit.Abstractions/9.2.2": {
         "type": "package",
         "compile": {
@@ -78,6 +94,58 @@
         },
         "runtime": {
           "lib/net10.0/MassTransit.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MassTransit.EntityFrameworkCore/9.2.2": {
+        "type": "package",
+        "dependencies": {
+          "MassTransit": "9.2.2",
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.0"
+        },
+        "compile": {
+          "lib/net10.0/MassTransit.EntityFrameworkCoreIntegration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/MassTransit.EntityFrameworkCoreIntegration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MassTransit.Quartz/9.2.2": {
+        "type": "package",
+        "dependencies": {
+          "MassTransit": "9.2.2",
+          "Quartz": "3.22.0",
+          "Quartz.Extensions.Hosting": "3.22.0"
+        },
+        "compile": {
+          "lib/net10.0/MassTransit.QuartzIntegration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/MassTransit.QuartzIntegration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MassTransit.RabbitMQ/9.2.2": {
+        "type": "package",
+        "dependencies": {
+          "MassTransit": "9.2.2",
+          "RabbitMQ.Client": "7.2.2"
+        },
+        "compile": {
+          "lib/net10.0/MassTransit.RabbitMqTransport.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/MassTransit.RabbitMqTransport.dll": {
             "related": ".xml"
           }
         }
@@ -130,6 +198,22 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore/10.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.12"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.DataProtection.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.DataProtection.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        }
       },
       "Microsoft.AspNetCore.OpenApi/10.0.12": {
         "type": "package",
@@ -205,6 +289,22 @@
       "Microsoft.EntityFrameworkCore.Analyzers/10.0.12": {
         "type": "package"
       },
+      "Microsoft.EntityFrameworkCore.Relational/10.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.12"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/10.0.0": {
         "type": "package",
         "build": {
@@ -244,6 +344,22 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore/10.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.12"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.IdentityModel.Abstractions/8.19.2": {
@@ -351,6 +467,37 @@
         "runtime": {
           "lib/net8.0/Microsoft.OpenApi.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Npgsql/10.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/10.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "[10.0.4, 11.0.0)",
+          "Microsoft.EntityFrameworkCore.Relational": "[10.0.4, 11.0.0)",
+          "Npgsql": "10.0.3"
+        },
+        "compile": {
+          "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -501,6 +648,64 @@
           }
         }
       },
+      "Quartz/3.22.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Quartz.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Quartz.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Quartz.Extensions.DependencyInjection/3.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Quartz": "3.22.0"
+        },
+        "compile": {
+          "lib/net10.0/Quartz.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Quartz.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Quartz.Extensions.Hosting/3.22.0": {
+        "type": "package",
+        "dependencies": {
+          "Quartz.Extensions.DependencyInjection": "3.22.0"
+        },
+        "compile": {
+          "lib/net10.0/Quartz.Extensions.Hosting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Quartz.Extensions.Hosting.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "RabbitMQ.Client/7.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Scrutor/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -616,6 +821,139 @@
           }
         }
       },
+      "Jobee.Workplace.Billing.RestApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "10.0.12"
+        },
+        "compile": {
+          "bin/placeholder/Jobee.Workplace.Billing.RestApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Jobee.Workplace.Billing.RestApi.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Jobee.Workplace.Infrastructure.Postgres/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Jobee.Workplace.Shared.Infrastructure": "1.0.0",
+          "MassTransit.EntityFrameworkCore": "9.2.2",
+          "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "10.0.12",
+          "Microsoft.EntityFrameworkCore": "10.0.12",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "10.0.12",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3"
+        },
+        "compile": {
+          "bin/placeholder/Jobee.Workplace.Infrastructure.Postgres.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Jobee.Workplace.Infrastructure.Postgres.dll": {}
+        }
+      },
+      "Jobee.Workplace.Infrastructure.RabbitMQ/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Jobee.Workplace.Shared.Application": "1.0.0",
+          "Jobee.Workplace.Shared.Infrastructure": "1.0.0",
+          "MassTransit.EntityFrameworkCore": "9.2.2",
+          "MassTransit.Quartz": "9.2.2",
+          "MassTransit.RabbitMQ": "9.2.2"
+        },
+        "compile": {
+          "bin/placeholder/Jobee.Workplace.Infrastructure.RabbitMQ.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Jobee.Workplace.Infrastructure.RabbitMQ.dll": {}
+        }
+      },
+      "Jobee.Workplace.Jobs.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "FluentValidation": "12.1.1",
+          "Jobee.Workplace.Jobs.Contracts": "1.0.0",
+          "Jobee.Workplace.Jobs.Domain": "1.0.0",
+          "MediatR": "14.2.0"
+        },
+        "compile": {
+          "bin/placeholder/Jobee.Workplace.Jobs.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Jobee.Workplace.Jobs.Application.dll": {}
+        }
+      },
+      "Jobee.Workplace.Jobs.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Jobee.Workplace.Shared.Contracts": "1.0.0",
+          "MediatR.Contracts": "2.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Jobee.Workplace.Jobs.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Jobee.Workplace.Jobs.Contracts.dll": {}
+        }
+      },
+      "Jobee.Workplace.Jobs.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Jobee.Workplace.Shared.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Jobee.Workplace.Jobs.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Jobee.Workplace.Jobs.Domain.dll": {}
+        }
+      },
+      "Jobee.Workplace.Jobs.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Jobee.Workplace.Jobs.Contracts": "1.0.0",
+          "Jobee.Workplace.Jobs.Domain": "1.0.0",
+          "Jobee.Workplace.Shared.Infrastructure": "1.0.0",
+          "MediatR": "14.2.0",
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.12"
+        },
+        "compile": {
+          "bin/placeholder/Jobee.Workplace.Jobs.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Jobee.Workplace.Jobs.Infrastructure.dll": {}
+        }
+      },
+      "Jobee.Workplace.Jobs.RestApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Jobee.Workplace.Jobs.Application": "1.0.0",
+          "Jobee.Workplace.Jobs.Contracts": "1.0.0",
+          "Jobee.Workplace.Jobs.Domain": "1.0.0",
+          "Jobee.Workplace.Jobs.Infrastructure": "1.0.0",
+          "Jobee.Workplace.Shared.RestAPI": "1.0.0",
+          "MediatR": "14.2.0",
+          "Microsoft.AspNetCore.OpenApi": "10.0.12"
+        },
+        "compile": {
+          "bin/placeholder/Jobee.Workplace.Jobs.RestApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Jobee.Workplace.Jobs.RestApi.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Jobee.Workplace.Shared.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -690,6 +1028,8 @@
           "Asp.Versioning.Http": "10.2.3",
           "FluentValidation": "12.1.1",
           "FluentValidation.DependencyInjectionExtensions": "12.1.1",
+          "Jobee.Workplace.Infrastructure.Postgres": "1.0.0",
+          "Jobee.Workplace.Infrastructure.RabbitMQ": "1.0.0",
           "Jobee.Workplace.Shared.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.12",
           "Microsoft.AspNetCore.OpenApi": "10.0.12",
@@ -786,6 +1126,29 @@
         "lib/net8.0/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
+    "MassTransit/9.2.2": {
+      "sha512": "ihHu8frvV6/sLPxYurx9uvfmLGoRoqQGtYpDpoqSeXOYeQSwN5LgXJcL8SqIQZI84Zoo9Z9aXnWPb4uukIxeQQ==",
+      "type": "package",
+      "path": "masstransit/9.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.README.md",
+        "lib/net10.0/MassTransit.dll",
+        "lib/net10.0/MassTransit.xml",
+        "lib/net472/MassTransit.dll",
+        "lib/net472/MassTransit.xml",
+        "lib/net8.0/MassTransit.dll",
+        "lib/net8.0/MassTransit.xml",
+        "lib/net9.0/MassTransit.dll",
+        "lib/net9.0/MassTransit.xml",
+        "lib/netstandard2.0/MassTransit.dll",
+        "lib/netstandard2.0/MassTransit.xml",
+        "masstransit.9.2.2.nupkg.sha512",
+        "masstransit.nuspec",
+        "mt-logo-small.png"
+      ]
+    },
     "MassTransit.Abstractions/9.2.2": {
       "sha512": "IiHPBPoeZ8kjvC00xMsUT/mwHIqEkyQuf+KCupGu4kmeBUU9huuK7iBSH666S83azr/yYkYMVxa1o5ZbZLvISw==",
       "type": "package",
@@ -806,6 +1169,71 @@
         "lib/netstandard2.0/MassTransit.Abstractions.xml",
         "masstransit.abstractions.9.2.2.nupkg.sha512",
         "masstransit.abstractions.nuspec",
+        "mt-logo-small.png"
+      ]
+    },
+    "MassTransit.EntityFrameworkCore/9.2.2": {
+      "sha512": "ngMn1KqiItuCled3hQUSeq7o8cDru7p7WNk8Yf9yxNbPHmR0MI0D461N4O+aPpaLbLFcCuAYnoT9xCqPjxuaGA==",
+      "type": "package",
+      "path": "masstransit.entityframeworkcore/9.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.README.md",
+        "lib/net10.0/MassTransit.EntityFrameworkCoreIntegration.dll",
+        "lib/net10.0/MassTransit.EntityFrameworkCoreIntegration.xml",
+        "lib/net8.0/MassTransit.EntityFrameworkCoreIntegration.dll",
+        "lib/net8.0/MassTransit.EntityFrameworkCoreIntegration.xml",
+        "lib/net9.0/MassTransit.EntityFrameworkCoreIntegration.dll",
+        "lib/net9.0/MassTransit.EntityFrameworkCoreIntegration.xml",
+        "masstransit.entityframeworkcore.9.2.2.nupkg.sha512",
+        "masstransit.entityframeworkcore.nuspec",
+        "mt-logo-small.png"
+      ]
+    },
+    "MassTransit.Quartz/9.2.2": {
+      "sha512": "qOjiTc9LigvNu5MSXUTT38PCqOm8rRhNqWqKpOQNGsUIzsHZ2VRck+XszG/5bVRjnq+O/omNMBV5noQHxUhswg==",
+      "type": "package",
+      "path": "masstransit.quartz/9.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.README.md",
+        "lib/net10.0/MassTransit.QuartzIntegration.dll",
+        "lib/net10.0/MassTransit.QuartzIntegration.xml",
+        "lib/net472/MassTransit.QuartzIntegration.dll",
+        "lib/net472/MassTransit.QuartzIntegration.xml",
+        "lib/net8.0/MassTransit.QuartzIntegration.dll",
+        "lib/net8.0/MassTransit.QuartzIntegration.xml",
+        "lib/net9.0/MassTransit.QuartzIntegration.dll",
+        "lib/net9.0/MassTransit.QuartzIntegration.xml",
+        "lib/netstandard2.0/MassTransit.QuartzIntegration.dll",
+        "lib/netstandard2.0/MassTransit.QuartzIntegration.xml",
+        "masstransit.quartz.9.2.2.nupkg.sha512",
+        "masstransit.quartz.nuspec",
+        "mt-logo-small.png"
+      ]
+    },
+    "MassTransit.RabbitMQ/9.2.2": {
+      "sha512": "Nf8ldx5tgZrfulK4mzkRIt149cMEpVGJAbiS+FA0GGDgnRZRNJtFJPzwdx4iV9knaJH1vXsmJVChQaSRS/myjg==",
+      "type": "package",
+      "path": "masstransit.rabbitmq/9.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.README.md",
+        "lib/net10.0/MassTransit.RabbitMqTransport.dll",
+        "lib/net10.0/MassTransit.RabbitMqTransport.xml",
+        "lib/net472/MassTransit.RabbitMqTransport.dll",
+        "lib/net472/MassTransit.RabbitMqTransport.xml",
+        "lib/net8.0/MassTransit.RabbitMqTransport.dll",
+        "lib/net8.0/MassTransit.RabbitMqTransport.xml",
+        "lib/net9.0/MassTransit.RabbitMqTransport.dll",
+        "lib/net9.0/MassTransit.RabbitMqTransport.xml",
+        "lib/netstandard2.0/MassTransit.RabbitMqTransport.dll",
+        "lib/netstandard2.0/MassTransit.RabbitMqTransport.xml",
+        "masstransit.rabbitmq.9.2.2.nupkg.sha512",
+        "masstransit.rabbitmq.nuspec",
         "mt-logo-small.png"
       ]
     },
@@ -861,6 +1289,22 @@
         "lib/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
         "microsoft.aspnetcore.authentication.jwtbearer.10.0.12.nupkg.sha512",
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore/10.0.12": {
+      "sha512": "oV5g+PWxCFI3liFQcRNNEhYeS8Jz9+rcjREPDRK8kk0a1q+sf8UUlyFwGCBbxWoNVPpenljm8WEUVCH10k71Bw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.dataprotection.entityframeworkcore/10.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net10.0/Microsoft.AspNetCore.DataProtection.EntityFrameworkCore.dll",
+        "lib/net10.0/Microsoft.AspNetCore.DataProtection.EntityFrameworkCore.xml",
+        "microsoft.aspnetcore.dataprotection.entityframeworkcore.10.0.12.nupkg.sha512",
+        "microsoft.aspnetcore.dataprotection.entityframeworkcore.nuspec"
       ]
     },
     "Microsoft.AspNetCore.OpenApi/10.0.12": {
@@ -955,6 +1399,21 @@
         "docs/PACKAGE.md",
         "microsoft.entityframeworkcore.analyzers.10.0.12.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Relational/10.0.12": {
+      "sha512": "OiHmr8XzX96dbgMsYGe8qoqg4KxibdZG2r0QUVJBGktFInOp8IrABe8jvcbo5hrqeWfbwpK7fCEBiEPbY/ik4A==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.relational/10.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net10.0/Microsoft.EntityFrameworkCore.Relational.dll",
+        "lib/net10.0/Microsoft.EntityFrameworkCore.Relational.xml",
+        "microsoft.entityframeworkcore.relational.10.0.12.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/10.0.0": {
@@ -1273,6 +1732,22 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore/10.0.12": {
+      "sha512": "BMG8waDSju79jJGdnOPrFrpqUv9/A+Qbg43WLmqUwMgdN26ozOK5iLXVCdaXgX71TvwEGX3HWCAGy711vGAl2Q==",
+      "type": "package",
+      "path": "microsoft.extensions.diagnostics.healthchecks.entityframeworkcore/10.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net10.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll",
+        "lib/net10.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.xml",
+        "microsoft.extensions.diagnostics.healthchecks.entityframeworkcore.10.0.12.nupkg.sha512",
+        "microsoft.extensions.diagnostics.healthchecks.entityframeworkcore.nuspec"
+      ]
+    },
     "Microsoft.IdentityModel.Abstractions/8.19.2": {
       "sha512": "HJbo/lnSfNHUfphPRT910poQc4T2/9+8svFLvzuaYHGAOJ2Tu+oEDqpX0BVP3BJ4OuUM1kylEKyaiX2fCAK3Cw==",
       "type": "package",
@@ -1445,6 +1920,40 @@
         "lib/netstandard2.0/Microsoft.OpenApi.xml",
         "microsoft.openapi.2.12.0.nupkg.sha512",
         "microsoft.openapi.nuspec"
+      ]
+    },
+    "Npgsql/10.0.3": {
+      "sha512": "7nb5YzXuvWWJxB0J8DiyL3we+X4FOctZrt0fIBnucOIaIevFEEwGQVZKtiu9olXdlNAK1eNgqSral6r/jlhI4w==",
+      "type": "package",
+      "path": "npgsql/10.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Npgsql.dll",
+        "lib/net10.0/Npgsql.xml",
+        "lib/net8.0/Npgsql.dll",
+        "lib/net8.0/Npgsql.xml",
+        "lib/net9.0/Npgsql.dll",
+        "lib/net9.0/Npgsql.xml",
+        "npgsql.10.0.3.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/10.0.3": {
+      "sha512": "IPGrrZnRkuW7OlHDhUESZz4G5DLkW7Nej/O3Cx+0iTsgyU5XJxBgpsvTHLloo3WWuAKKbDHXBvWPVkX1deRh1Q==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/10.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "npgsql.entityframeworkcore.postgresql.10.0.3.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
       ]
     },
     "OpenTelemetry/1.19.1": {
@@ -1703,6 +2212,90 @@
         "opentelemetry.instrumentation.entityframeworkcore.nuspec"
       ]
     },
+    "Quartz/3.22.0": {
+      "sha512": "Bq7XJNnFC1l54jpELSPi5xZ8QbA9wFpJOeMJ1MsS1LSS+yUFa/5dvAm5YGIaiq41szwCmRisZL+iwrhBUvIBPA==",
+      "type": "package",
+      "path": "quartz/3.22.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Quartz.dll",
+        "lib/net10.0/Quartz.xml",
+        "lib/net462/Quartz.dll",
+        "lib/net462/Quartz.xml",
+        "lib/net472/Quartz.dll",
+        "lib/net472/Quartz.xml",
+        "lib/net8.0/Quartz.dll",
+        "lib/net8.0/Quartz.xml",
+        "lib/net9.0/Quartz.dll",
+        "lib/net9.0/Quartz.xml",
+        "lib/netstandard2.0/Quartz.dll",
+        "lib/netstandard2.0/Quartz.xml",
+        "quartz-logo-small.png",
+        "quartz.3.22.0.nupkg.sha512",
+        "quartz.nuspec"
+      ]
+    },
+    "Quartz.Extensions.DependencyInjection/3.22.0": {
+      "sha512": "xfr8PRBtQDFwiUdbmIi56QX1vpMdBVKTsu0dHakUqRwc5lpe6IgzOIseQzq1tPlnlTCZleplJfH6InSj5E3lQw==",
+      "type": "package",
+      "path": "quartz.extensions.dependencyinjection/3.22.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Quartz.Extensions.DependencyInjection.dll",
+        "lib/net10.0/Quartz.Extensions.DependencyInjection.xml",
+        "lib/net8.0/Quartz.Extensions.DependencyInjection.dll",
+        "lib/net8.0/Quartz.Extensions.DependencyInjection.xml",
+        "lib/net9.0/Quartz.Extensions.DependencyInjection.dll",
+        "lib/net9.0/Quartz.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Quartz.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Quartz.Extensions.DependencyInjection.xml",
+        "quartz-logo-small.png",
+        "quartz.extensions.dependencyinjection.3.22.0.nupkg.sha512",
+        "quartz.extensions.dependencyinjection.nuspec"
+      ]
+    },
+    "Quartz.Extensions.Hosting/3.22.0": {
+      "sha512": "zVDs4nHELhjabZ8WEfP7j/wcG6DKKtYvULoQL8Oix4vyisvBD9kCMiQVFSQ5PnmWW0O8PH/JuahBLp0e6JxIYQ==",
+      "type": "package",
+      "path": "quartz.extensions.hosting/3.22.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Quartz.Extensions.Hosting.dll",
+        "lib/net10.0/Quartz.Extensions.Hosting.xml",
+        "lib/net8.0/Quartz.Extensions.Hosting.dll",
+        "lib/net8.0/Quartz.Extensions.Hosting.xml",
+        "lib/net9.0/Quartz.Extensions.Hosting.dll",
+        "lib/net9.0/Quartz.Extensions.Hosting.xml",
+        "lib/netstandard2.0/Quartz.Extensions.Hosting.dll",
+        "lib/netstandard2.0/Quartz.Extensions.Hosting.xml",
+        "quartz-logo-small.png",
+        "quartz.extensions.hosting.3.22.0.nupkg.sha512",
+        "quartz.extensions.hosting.nuspec"
+      ]
+    },
+    "RabbitMQ.Client/7.2.2": {
+      "sha512": "k4b6RnTXpLbsF96V93ooNYxgPMnoA2tEm24B6AXNJr1mG8wwNYdA1XJtgU66L5xqeGyveS7SJriRzlX3cbqQNA==",
+      "type": "package",
+      "path": "rabbitmq.client/7.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/RabbitMQ.Client.dll",
+        "lib/net8.0/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.7.2.2.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
+    },
     "Scrutor/7.0.0": {
       "sha512": "wHWaroody48jnlLoq/REwUltIFLxplXyHTP+sttrc8P7+jkiVqf38afDidJNv4qgD/6zz2NKOYg06xLZ1bG7wQ==",
       "type": "package",
@@ -1859,6 +2452,46 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
+    "Jobee.Workplace.Billing.RestApi/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Billing/Jobee.Workplace.Billing.RestApi/Jobee.Workplace.Billing.RestApi.csproj",
+      "msbuildProject": "../../Modules/Billing/Jobee.Workplace.Billing.RestApi/Jobee.Workplace.Billing.RestApi.csproj"
+    },
+    "Jobee.Workplace.Infrastructure.Postgres/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/Jobee.Workplace.Infrastructure.Postgres/Jobee.Workplace.Infrastructure.Postgres.csproj",
+      "msbuildProject": "../../Infrastructure/Jobee.Workplace.Infrastructure.Postgres/Jobee.Workplace.Infrastructure.Postgres.csproj"
+    },
+    "Jobee.Workplace.Infrastructure.RabbitMQ/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/Jobee.Workplace.Infrastructure.RabbitMQ/Jobee.Workplace.Infrastructure.RabbitMQ.csproj",
+      "msbuildProject": "../../Infrastructure/Jobee.Workplace.Infrastructure.RabbitMQ/Jobee.Workplace.Infrastructure.RabbitMQ.csproj"
+    },
+    "Jobee.Workplace.Jobs.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Jobs/Jobee.Workplace.Jobs.Application/Jobee.Workplace.Jobs.Application.csproj",
+      "msbuildProject": "../../Modules/Jobs/Jobee.Workplace.Jobs.Application/Jobee.Workplace.Jobs.Application.csproj"
+    },
+    "Jobee.Workplace.Jobs.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Jobs/Jobee.Workplace.Jobs.Contracts/Jobee.Workplace.Jobs.Contracts.csproj",
+      "msbuildProject": "../../Modules/Jobs/Jobee.Workplace.Jobs.Contracts/Jobee.Workplace.Jobs.Contracts.csproj"
+    },
+    "Jobee.Workplace.Jobs.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Jobs/Jobee.Workplace.Jobs.Domain/Jobee.Workplace.Jobs.Domain.csproj",
+      "msbuildProject": "../../Modules/Jobs/Jobee.Workplace.Jobs.Domain/Jobee.Workplace.Jobs.Domain.csproj"
+    },
+    "Jobee.Workplace.Jobs.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Jobs/Jobee.Workplace.Jobs.Infrastructure/Jobee.Workplace.Jobs.Infrastructure.csproj",
+      "msbuildProject": "../../Modules/Jobs/Jobee.Workplace.Jobs.Infrastructure/Jobee.Workplace.Jobs.Infrastructure.csproj"
+    },
+    "Jobee.Workplace.Jobs.RestApi/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Jobs/Jobee.Workplace.Jobs.RestApi/Jobee.Workplace.Jobs.RestApi.csproj",
+      "msbuildProject": "../../Modules/Jobs/Jobee.Workplace.Jobs.RestApi/Jobee.Workplace.Jobs.RestApi.csproj"
+    },
     "Jobee.Workplace.Shared.Application/1.0.0": {
       "type": "project",
       "path": "../../Shared/Jobee.Workplace.Shared.Application/Jobee.Workplace.Shared.Application.csproj",
@@ -1892,6 +2525,8 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Jobee.Workplace.Billing.RestApi >= 1.0.0",
+      "Jobee.Workplace.Jobs.RestApi >= 1.0.0",
       "Jobee.Workplace.Shared.Infrastructure >= 1.0.0",
       "Jobee.Workplace.Shared.RestAPI >= 1.0.0"
     ]
@@ -1925,6 +2560,12 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
+            "/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.RestApi/Jobee.Workplace.Billing.RestApi.csproj": {
+              "projectPath": "/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Billing/Jobee.Workplace.Billing.RestApi/Jobee.Workplace.Billing.RestApi.csproj"
+            },
+            "/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Jobs/Jobee.Workplace.Jobs.RestApi/Jobee.Workplace.Jobs.RestApi.csproj": {
+              "projectPath": "/home/kambie/Projects/jobee/jobee_workplace/src/Modules/Jobs/Jobee.Workplace.Jobs.RestApi/Jobee.Workplace.Jobs.RestApi.csproj"
+            },
             "/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Infrastructure/Jobee.Workplace.Shared.Infrastructure.csproj": {
               "projectPath": "/home/kambie/Projects/jobee/jobee_workplace/src/Shared/Jobee.Workplace.Shared.Infrastructure/Jobee.Workplace.Shared.Infrastructure.csproj"
             },
@@ -2440,6 +3081,18 @@
         "include": "Runtime, Compile, Native, BuildTransitive",
         "version": "[9.2.2, )"
       },
+      "MassTransit.EntityFrameworkCore": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[9.2.2, )"
+      },
+      "MassTransit.Quartz": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[9.2.2, )"
+      },
+      "MassTransit.RabbitMQ": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[9.2.2, )"
+      },
       "MediatR": {
         "include": "Runtime, Compile, Native, BuildTransitive",
         "version": "[14.2.0, )"
@@ -2452,6 +3105,10 @@
         "include": "Runtime, Compile, Native, BuildTransitive",
         "version": "[10.0.12, )"
       },
+      "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[10.0.12, )"
+      },
       "Microsoft.AspNetCore.OpenApi": {
         "include": "Runtime, Compile, Native, BuildTransitive",
         "version": "[10.0.12, )"
@@ -2460,9 +3117,21 @@
         "include": "Runtime, Compile, Native, BuildTransitive",
         "version": "[10.0.12, )"
       },
+      "Microsoft.EntityFrameworkCore.Relational": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[10.0.12, )"
+      },
       "Microsoft.Extensions.Caching.Hybrid": {
         "include": "Runtime, Compile, Native, BuildTransitive",
         "version": "[10.10.0, )"
+      },
+      "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[10.0.12, )"
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[10.0.3, )"
       },
       "OpenTelemetry": {
         "include": "Runtime, Compile, Native, BuildTransitive",

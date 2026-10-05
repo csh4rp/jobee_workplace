@@ -28,7 +28,7 @@ public static class Extensions
             var name = moduleSection.Key;
 
             var appModuleType = files
-                .Where(file => file.EndsWith($".{name}.RestAPI.dll"))
+                .Where(file => file.EndsWith($".{name}.RestApi.dll"))
                 .Select(Assembly.LoadFile)
                 .SelectMany(assembly => assembly.GetExportedTypes())
                 .FirstOrDefault(t => t.IsAssignableTo(typeof(IAppModule)));

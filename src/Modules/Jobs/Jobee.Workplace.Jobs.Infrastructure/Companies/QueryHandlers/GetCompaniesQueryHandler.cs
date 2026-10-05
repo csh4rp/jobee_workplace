@@ -23,7 +23,7 @@ public class GetCompaniesQueryHandler : IRequestHandler<GetCompaniesQuery, Resul
 
         if (!string.IsNullOrWhiteSpace(request.Name))
         {
-            query = query.Where(c => c.Name.StartsWith(request.Name));
+            query = query.Where(c => c.Name.Contains(request.Name));
         }
 
         var items = await query.OrderBy(c => c.Name)

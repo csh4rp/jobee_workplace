@@ -8,7 +8,8 @@ public static class Extensions
     {
         serviceCollection.AddScoped<IIdentityContextSetter>(sp => sp.GetRequiredService<IdentityContextWrapper>())
             .AddScoped<IIdentityContextAccessor>(sp => sp.GetRequiredService<IdentityContextWrapper>())
-            .AddScoped<IdentityContextWrapper>();
+            .AddScoped<IdentityContextWrapper>()
+            .AddSingleton<StaticPermissionsProvider>();
 
         return serviceCollection;
     }

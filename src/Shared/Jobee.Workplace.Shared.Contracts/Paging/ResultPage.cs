@@ -14,6 +14,8 @@ public record ResultPage<T> : IEnumerable<T>
 
     public int TotalPages => (int)Math.Ceiling((double)TotalCount / PageSize);
     
+    public bool IsEmpty => Items.Count == 0;
+    
     public IEnumerator<T> GetEnumerator() => Items.GetEnumerator();
 
     IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();

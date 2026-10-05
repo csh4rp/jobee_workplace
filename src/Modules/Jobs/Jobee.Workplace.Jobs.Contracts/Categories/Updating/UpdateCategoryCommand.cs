@@ -2,7 +2,7 @@ using MediatR;
 
 namespace Jobee.Workplace.Jobs.Contracts.Categories.Updating;
 
-public class UpdateCategoryCommand : IRequest<Guid>
+public class UpdateCategoryCommand : IRequest
 {
     public Guid Id { get; private set; }
     

@@ -4,9 +4,9 @@ namespace Jobee.Workplace.Shared.Application.Identity;
 
 public sealed class StaticPermissionsProvider
 {
-    private static readonly List<Permission> UserPermissions = new();
-    private static readonly List<Permission> AnonymousPermissions = new();
-    private static readonly List<Permission> SystemPermissions = new();
+    private static readonly List<Permission> UserPermissions = [];
+    private static readonly List<Permission> AnonymousPermissions = [];
+    private static readonly List<Permission> SystemPermissions = [];
 
     public StaticPermissionsProvider(IConfiguration configuration)
     {

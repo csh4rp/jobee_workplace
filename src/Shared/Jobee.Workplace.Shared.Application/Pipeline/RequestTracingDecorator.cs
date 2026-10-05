@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Jobee.Workplace.Shared.Application.Pipeline;
 
-internal sealed class RequestTracingDecorator<TRequest, TResponse>
+internal sealed class RequestTracingDecorator<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
 {
     private readonly ILogger<RequestTracingDecorator<TRequest, TResponse>> _logger;
     private readonly IOperationContextAccessor _operationContextAccessor;

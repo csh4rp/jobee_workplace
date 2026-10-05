@@ -2,6 +2,8 @@
     
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Modules\Billing\Jobee.Workplace.Billing.RestApi\Jobee.Workplace.Billing.RestApi.csproj" />
+      <ProjectReference Include="..\..\Modules\Jobs\Jobee.Workplace.Jobs.RestApi\Jobee.Workplace.Jobs.RestApi.csproj" />
       <ProjectReference Include="..\..\Shared\Jobee.Workplace.Shared.Infrastructure\Jobee.Workplace.Shared.Infrastructure.csproj" />
       <ProjectReference Include="..\..\Shared\Jobee.Workplace.Shared.RestAPI\Jobee.Workplace.Shared.RestAPI.csproj" />
     </ItemGroup>

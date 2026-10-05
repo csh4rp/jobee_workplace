@@ -4,7 +4,11 @@
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\..\..\Shared\Jobee.Workplace.Shared.RestAPI\Jobee.Workplace.Shared.RestAPI.csproj" />
+      <ProjectReference Include="..\Jobee.Workplace.Jobs.Application\Jobee.Workplace.Jobs.Application.csproj" />
       <ProjectReference Include="..\Jobee.Workplace.Jobs.Contracts\Jobee.Workplace.Jobs.Contracts.csproj" />
+      <ProjectReference Include="..\Jobee.Workplace.Jobs.Domain\Jobee.Workplace.Jobs.Domain.csproj" />
+      <ProjectReference Include="..\Jobee.Workplace.Jobs.Infrastructure\Jobee.Workplace.Jobs.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

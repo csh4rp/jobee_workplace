@@ -1,6 +1,7 @@
 using System.Reflection;
 using Asp.Versioning;
 using FluentValidation;
+using Jobee.Workplace.Infrastructure.Postgres;
 using Jobee.Workplace.Shared.Application.Identity;
 using Jobee.Workplace.Shared.Application.Pipeline;
 using Jobee.Workplace.Shared.Application.Tracing;
@@ -13,6 +14,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Caching.Hybrid;
 using Microsoft.OpenApi;
+using OpenTelemetry.Metrics;
 
 namespace Jobee.Workplace.Shared.RestAPI;
 
@@ -60,8 +62,11 @@ public static class Extensions
 
         foreach (var module in modules)
         {
-            builder.Services.AddSingleton<IAppModule>(_ => module);
+            builder.Services.AddSingleton<IWebAppModule>(module);
+            builder.Services.AddSingleton<IAppModule>(module);
         }
+
+        builder.RegisterModules();
 
         builder.Services.AddApiVersioning(options =>
         {
@@ -69,6 +74,11 @@ public static class Extensions
             options.AssumeDefaultVersionWhenUnspecified = true;
             options.DefaultApiVersion = new ApiVersion(1, 0);
         });
+
+        builder.Services.AddOpenTelemetry()
+            .WithMetrics(metrics => metrics
+                .AddAspNetCoreInstrumentation()
+                .AddPrometheusExporter());
 
         if (builder.Environment.IsDevelopment())
         {
@@ -125,6 +135,11 @@ public static class Extensions
                     requirement[scheme] = new List<string>();
                     return requirement;
                 });
+
+                foreach (var module in modules)
+                {
+                    module.SwaggerGenAction(opt);
+                }
             });
 
         return serviceCollection;
@@ -134,16 +149,12 @@ public static class Extensions
     {
         var modules = builder.Configuration.GetAppModules().ToList();
 
-        foreach (var module in modules)
-        {
-            builder.Services.AddSingleton<IAppModule>(_ => (IAppModule)Activator.CreateInstance(module.GetType())!);
-        }
-
         var assemblies = modules.SelectMany(m => m.Assemblies).ToArray();
 
         builder.Services.Configure<BasicAuthOptions>(builder.Configuration.GetSection("Auth:Basic"));
 
         builder.Services.AddValidatorsFromAssemblies(assemblies, includeInternalTypes: true)
+            .AddPostgres()
             .AddRequestPipeline(assemblies)
             .AddIdentityContext()
             .AddHttpContextAccessor()

@@ -19,6 +19,8 @@
         <PackageReference Include="Swashbuckle.AspNetCore"/>
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\..\Infrastructure\Jobee.Workplace.Infrastructure.Postgres\Jobee.Workplace.Infrastructure.Postgres.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\Jobee.Workplace.Infrastructure.RabbitMQ\Jobee.Workplace.Infrastructure.RabbitMQ.csproj" />
       <ProjectReference Include="..\Jobee.Workplace.Shared.Infrastructure\Jobee.Workplace.Shared.Infrastructure.csproj" />
     </ItemGroup>
 </Project>
